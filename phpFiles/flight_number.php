@@ -41,7 +41,7 @@
                                     <h5 style="text-align:center"><u>CAK</u></h5>
                                 </div>
                                 <div class="col-md-2">
-                                    <img class="center-blck" src="flightin.JPG">
+                                    <img class="center-block" src="flightin.JPG">
 
                                 </div>
                                 <div class="col-md-4">
@@ -60,7 +60,7 @@
                                     <h5 style="text-align:center"><u>CAK</u></h5>
                                 </div>
                                 <div class="col-md-2">
-                                    <img class="center-blck" src="flightout.JPG">
+                                    <img class="center-block" src="flightout.JPG">
 
                                 </div>
                                 <div class="col-md-4">
@@ -74,6 +74,9 @@
                         </div>
                         <p style="text-align: center;">Airline: Southwest</p>
                     </div>
+                        <form action="index.php" method="post">
+                            <button style="margin: 5px;float:left" type="submit" class="btn btn-success btn-lg btn-block">Back</button>
+                        </form>
                     <div class="container col-md-12">
                         <div class="row">
                             <div class="col-md-12">
