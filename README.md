@@ -51,4 +51,4 @@ To use git -->
     5. git status (you want to be in master)
     6. git checkout -b BRANCHNAME
     7. do some work
-d
+
