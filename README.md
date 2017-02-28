@@ -7,7 +7,7 @@ index.php is landing page
 using a bootstrap panel to control the view for mobile phones(no implementation for desktop)
 
 Task list(done):
-
+```
 convert db to mysql
 
 create template for pages
@@ -15,9 +15,9 @@ create template for pages
 create index.php for user
 
 create flight_number.php for user
-
+```
 Task list(to do):
-
+```
 create user login screen
 
 create airline screen
@@ -27,7 +27,7 @@ hook up website to DB
 query db's to get vars to replace hard-coded text
 
 general code cleanup
-
+```
 
 If you want to test the php pages out then you will need to install xampp or wampp
   1. Set up php apache and mysql server
