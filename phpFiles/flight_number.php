@@ -38,17 +38,17 @@
                             <div class="row">
 
                                 <div class="col-md-2">
-                                    <h5 style="text-align:center"><u>CAK</u></h5>
+                                    <h5 style="text-align:center">CAK</h5>
                                 </div>
                                 <div class="col-md-2">
                                     <img class="center-block" src="flightin.JPG">
 
                                 </div>
                                 <div class="col-md-4">
-                                    <h5 style="text-align:center"><u>Feb 28 2017</u></h5>
+                                    <h5 style="text-align:center">Feb 28 2017</h5>
                                 </div>
                                 <div class="col-md-4">
-                                    <h5 style="text-align:center"><u>5:00am</u></h5>
+                                    <h5 style="text-align:center">5:00am</h5>
 
                                 </div>
                             </div>
@@ -57,17 +57,17 @@
                             <div class="row">
 
                                 <div class="col-md-2">
-                                    <h5 style="text-align:center"><u>CAK</u></h5>
+                                    <h5 style="text-align:center">LGA</h5>
                                 </div>
                                 <div class="col-md-2">
                                     <img class="center-block" src="flightout.JPG">
 
                                 </div>
                                 <div class="col-md-4">
-                                    <h5 style="text-align:center"><u>Feb 28 2017</u></h5>
+                                    <h5 style="text-align:center">Feb 28 2017</h5>
                                 </div>
                                 <div class="col-md-4">
-                                    <h5 style="text-align:center"><u>5:00am</u></h5>
+                                    <h5 style="text-align:center">7:20am</h5>
 
                                 </div>
                             </div>
