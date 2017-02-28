@@ -17,6 +17,9 @@ To use git -->
   https://git-for-windows.github.io/ for windows installation (mac you are on your own, but should be something like sudo apt-get install git-core)
   install the gitbash client for easy use
   open gitbash in a directory you want the files
+  
+  
+  
     1. mkdir -p folderNew
     2. cd folderNew
     3. git init
