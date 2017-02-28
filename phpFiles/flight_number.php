@@ -41,7 +41,7 @@
                                     <h5 style="text-align:center">CAK</h5>
                                 </div>
                                 <div class="col-md-2">
-                                    <img class="center-block" src="flightin.JPG">
+                                    <img class="center-block" src="flightout.JPG">
 
                                 </div>
                                 <div class="col-md-4">
@@ -60,7 +60,7 @@
                                     <h5 style="text-align:center">LGA</h5>
                                 </div>
                                 <div class="col-md-2">
-                                    <img class="center-block" src="flightout.JPG">
+                                    <img class="center-block" src="flightin.JPG">
 
                                 </div>
                                 <div class="col-md-4">
