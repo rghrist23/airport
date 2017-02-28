@@ -1,27 +1,3 @@
-<?php
-    session_start();?>
-
-<?php
-    $error = "xxx";
-
-
-if(isset($_POST['submit'])){
-    $error = "yyy ";
-    if(!(empty($_POST['email']) && (empty($_POST['password'])))){
-        $username = $_POST['email'];
-        $password = $_POST['password'];
-
-    }
-    else {
-        $error = "Please enter both username and password!";
-        //error notice
-    }
-}
-
-$_SESSION['error'] = $error;
-
-?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -35,58 +11,80 @@ $_SESSION['error'] = $error;
     <title>Welcome to Guerilla Sky Systems
     </title>
 </head>
-<body style="padding-top: 20px">
+<body style="padding-top: 20px; background-color:black"">
 
 <div class="container">
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Guerilla Sky Systems</h3>
+            <div class="panel panel-default" style="background-image: url(sky-383823_640.jpg); background-size: cover; ">
+                <div class="panel-heading" style="text-align: center;">
+                    <h1>Guerilla Sky Systems</h1>
+                    <h4 class="panel-title">Airport here</h4>
                 </div>
-                <div class="panel-body">
-                    <form accept-charset="UTF-8" role="form" action="login.php" method="post">
+                <div class="panel-body" >
+                    <form accept-charset="UTF-8" role="form" action="index.php" method="post">
                         <fieldset>
                             <div class="form-group">
                                 <input class="form-control" placeholder="E-mail" name="email" type="text">
                             </div>
                             <div class="form-group">
                                 <input class="form-control" placeholder="Password" name="password" type="password" value="">
-                                <span style="color:red"><?php echo $_SESSION['error']; ?></span>
                             </div>
-                            <input class="btn btn-md btn-success btn-block" type="submit" name="submit" value="Login">
+
+                            <div class="col-md-12">
+
+                                <button style="margin: 5px;float:left" type="submit" class="btn btn-success btn-lg col-md-5">
+                                    Login</button>
+
+                                <button style="margin:5px;float:right" type="reset" class="btn btn-primary btn-lg col-md-5">
+                                    Register</button>
+
+                            </div>
                         </fieldset>
                     </form>
-                            <p></p>
+                    <p></p>
                     <p align="center">No login? <u>Look up flight info below</u>.</p>
-                            <form action="login.php" method="post">
-                            <div class=input-group>
-                                <input class="form-control" placeholder="Flight#" name="Flight_number" type="text">
-                                <span class="input-group-btn">
+                    <form action="flight_number.php" method="post">
+                        <div class=input-group>
+                            <input class="form-control" placeholder="Flight#" name="Flight_number" type="text">
+                            <span class="input-group-btn">
                                     <input class="btn btn-md btn-success" type="submit" value="Go">
 
                                 </span>
-                            </div>
-                            </form>
-                            <p></p>
-                            <p></p>
-                            <div class="dropdown">
-                                    <button class="btn btn-block btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Airlines
-                                        <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Delta</a></li>
-                                        <li><a href="#">Southwest</a></li>
-                                        <li><a href="#">United Airlines</a></li>
-                                        <li><a href="#">American Airlines</a></li>
-                                        <li><a href="#">JetBlue</a></li>
-                                        <li><a href="#">Spirit</a></li>
-                                        <li><a href="#">Frontier</a></li>
-                                    </ul>
-                                </div>
+                        </div>
+                    </form>
+                    <p></p>
+                    <h5 style="text-align: center;">Or</h5>
+                    <div class="dropdown">
+                        <button class="btn btn-block btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Airlines
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Delta</a></li>
+                            <li><a href="#">Southwest</a></li>
+                            <li><a href="#">United Airlines</a></li>
+                            <li><a href="#">American Airlines</a></li>
+                            <li><a href="#">JetBlue</a></li>
+                            <li><a href="#">Spirit</a></li>
+                            <li><a href="#">Frontier</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5 style="text-align: center;">Contact : 3303303330</h5>
+                            <h5 style="text-align: center;">Address : 100 E lane Nowhere</h5>
+                            <h5 style="text-align: center;" >Copyright Guerilla Sky Systems 2017</h5>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div>
 </div>
 
 </body>
