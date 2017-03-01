@@ -10,6 +10,29 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Welcome to Guerilla Sky Systems
     </title>
+
+    <style>
+        table.center {
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
 </head>
 <body style="padding-top: 20px; background-color:black"">
 
@@ -22,20 +45,12 @@
                     <h4 class="panel-title">Airport here</h4>
                 </div>
                 <div class="panel-body" >
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <h5 style="text-align:center"><u>Flight Number</u></h5>
-                            <h4 style="text-align:center">U213F</h4>
-                        </div>
-                        <div class="col-xs-6">
-                            <h5 style="text-align:center"><u>Flight Gate</u></h5>
-                            <h4 style="text-align:center">B21</h4>
-
-                        </div>
-                    </div>
-                    <div class="jumbotron jumbotron-fluid" style="padding:0;">
+                   <div class="jumbotron jumbotron-fluid" style="padding:0;">
                         <div class="container">
                             <div class="row">
+                                <div class="col-xs-12">
+                                    <h3 style="text-align: center;"> Welcome Username!</h3>
+                                </div>
 
                                 <div class="col-xs-2">
                                     <h5 style="text-align:center">CAK</h5>
@@ -49,7 +64,6 @@
                                 </div>
                                 <div class="col-xs-4">
                                     <h5 style="text-align:center">5:00am</h5>
-
                                 </div>
                             </div>
                         </div>
@@ -73,10 +87,36 @@
                             </div>
                         </div>
                         <p style="text-align: center;">Airline: Southwest</p>
+
                     </div>
-                        <form action="index.php" method="post">
-                            <button type="submit" class="btn btn-success btn-lg btn-block">Back</button>
-                        </form>
+                    <div class="jumbotron col-xs-12" style="padding: 2px;">
+                        <p style="text-align: center;">History</p>
+                        <table class="center" style="text-align: center;">
+                            <tr>
+                                <th>Flight#</th>
+                                <th>Destination</th>
+                                <th>Date</th>
+                            </tr>
+                            <tr>
+                                <td>U213F</td>
+                                <td>Chicago</td>
+                                <td>2.20.17</td>
+                            </tr>
+                            <tr>
+                                <td>Z148G</td>
+                                <td>San Francisco</td>
+                                <td>2.04.17</td>
+                            </tr>
+                            <tr>
+                                <td>D903M</td>
+                                <td>Paris</td>
+                                <td>1-15-17</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <form action="index.php" method="post">
+                        <button type="submit" class="btn btn-success btn-lg btn-block">Back</button>
+                    </form>
                     <div class="container col-xs-12">
                         <div class="row">
                             <div class="col-xs-12">

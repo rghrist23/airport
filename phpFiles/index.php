@@ -31,13 +31,10 @@
                                 <input class="form-control" placeholder="Password" name="password" type="password" value="">
                             </div>
 
-                            <div class="col-md-12">
+                            <div class="col-xs-12">
+                                <button type="submit" formaction="login.php" class="btn btn-success btn-lg btn-block">Login</button>
 
-                                <button style="margin: 5px;float:left" type="submit" class="btn btn-success btn-lg col-md-5">
-                                    Login</button>
 
-                                <button style="margin:5px;float:right" type="reset" class="btn btn-primary btn-lg col-md-5">
-                                    Register</button>
 
                             </div>
                         </fieldset>
@@ -59,13 +56,13 @@
                         <button class="btn btn-block btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Airlines
                             <span class="caret"></span></button>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Delta</a></li>
-                            <li><a href="#">Southwest</a></li>
-                            <li><a href="#">United Airlines</a></li>
-                            <li><a href="#">American Airlines</a></li>
-                            <li><a href="#">JetBlue</a></li>
-                            <li><a href="#">Spirit</a></li>
-                            <li><a href="#">Frontier</a></li>
+                            <li><a href="airline.php">Delta</a></li>
+                            <li><a href="airline.php">Southwest</a></li>
+                            <li><a href="airline.php">United Airlines</a></li>
+                            <li><a href="airline.php">American Airlines</a></li>
+                            <li><a href="airline.php">JetBlue</a></li>
+                            <li><a href="airline.php">Spirit</a></li>
+                            <li><a href="airline.php">Frontier</a></li>
                         </ul>
                     </div>
                 </div>
