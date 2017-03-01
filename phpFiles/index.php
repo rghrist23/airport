@@ -22,6 +22,8 @@
                     <h4 class="panel-title">Airport here</h4>
                 </div>
                 <div class="panel-body" >
+                    <div class="jumbotron" style="padding: 8px;">
+
                     <form accept-charset="UTF-8" role="form" action="index.php" method="post">
                         <fieldset>
                             <div class="form-group">
@@ -76,6 +78,7 @@
                         </div>
 
                     </div>
+                </div>
                 </div>
             </div>
         </div>

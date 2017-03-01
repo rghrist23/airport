@@ -15,13 +15,13 @@ create template for pages
 create index.php for user
 
 create flight_number.php for user
-```
-Task list(to do):
-```
+
 create user login screen
 
 create airline screen
-
+```
+Task list(to do):
+```
 hook up website to DB
 
 query db's to get vars to replace hard-coded text
