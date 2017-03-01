@@ -15,28 +15,28 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-4 col-md-offset-4">
+        <div>
             <div class="panel panel-default" style="background-image: url(sky-383823_640.jpg); background-size: cover; ">
                 <div class="panel-heading" style="text-align: center;">
                     <h1>Guerilla Sky Systems</h1>
                     <h4 class="panel-title">Airport here</h4>
                 </div>
                 <div class="panel-body" >
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <h5 style="text-align:center"><u>Flight Number</u></h5>
-                            <h4 style="text-align:center">U213F</h4>
-                        </div>
-                        <div class="col-xs-6">
-                            <h5 style="text-align:center"><u>Flight Gate</u></h5>
-                            <h4 style="text-align:center">B21</h4>
-
-                        </div>
-                    </div>
                     <div class="jumbotron jumbotron-fluid" style="padding:0;">
                         <div class="container">
                             <div class="row">
 
+                                    <div class="col-xs-6">
+                                        <h5 style="text-align:center"><u>Flight Number</u></h5>
+                                        <h4 style="text-align:center">U213F</h4>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h5 style="text-align:center"><u>Flight Gate</u></h5>
+                                        <h4 style="text-align:center">B21<br></h4>
+
+                                    </div>
+
+                                
                                 <div class="col-xs-2">
                                     <h5 style="text-align:center">CAK</h5>
                                 </div>

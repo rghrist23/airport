@@ -38,7 +38,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-4 col-md-offset-4">
+        <div>
             <div class="panel panel-default" style="background-image: url(sky-383823_640.jpg); background-size: cover; ">
                 <div class="panel-heading" style="text-align: center;">
                     <h1>Guerilla Sky Systems</h1>
