@@ -29,7 +29,7 @@ $airport3code = "APH";
     <link rel="stylesheet" href="bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Welcome to Guerilla Sky Systems
+    <title>Welcome to Guerrilla Sky Systems
     </title>
 
     <style>
@@ -64,12 +64,12 @@ $airport3code = "APH";
         <div>
             <div class="panel panel-default" style="background-image: url(sky-383823_640.jpg); background-size: cover; ">
                 <div class="panel-heading" style="text-align: center;">
-                    <h1>Guerilla Sky Systems</h1>
+                    <h1>Guerrilla Sky Systems</h1>
                     <h4 class="panel-title">Airport here</h4>
                 </div>
                 <div class="panel-body" >
                     <div class="jumbotron col-xs-12" style="padding: 2px;">
-                        <p style="text-align: center;">Airline Name</p>
+                        <p style="text-align: center;"><?php echo $output[0][5];?></p>
                         <table class="center" style="text-align: center;">
                             <tr>
                                 <td>Flight#</td>
@@ -90,15 +90,28 @@ $airport3code = "APH";
 
                         </table>
                     </div>
+                    <div class="dropdown">
+                        <button class="btn btn-block btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Airlines
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <form action="airline.php" method="post">
+                                <li><input class="btn btn-link" name="company" type="submit" value="American"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="Hawaiian"></a></li>
+                            </form>
+                        </ul>
+                    </div>
+                    <br>
+                    <br>
                     <form action="index.php" method="post">
                         <button type="submit" class="btn btn-success btn-lg btn-block">Back</button>
                     </form>
+
                     <div class="container col-xs-12">
                         <div class="row">
                             <div class="col-xs-12">
                                 <h5 style="text-align: center;">  Contact : 3303303330</h5>
                                 <h5 style="text-align: center;">  Address : 100 E lane Nowhere</h5>
-                                <h5 style="text-align: center;" >  Copyright Guerilla Sky Systems 2017</h5>
+                                <h5 style="text-align: center;" >  Copyright Guerrilla Sky Systems 2017</h5>
 
                             </div>
 

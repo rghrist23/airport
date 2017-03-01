@@ -30,7 +30,7 @@ $airport3code = "APH";
     <link rel="stylesheet" href="bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Welcome to Guerilla Sky Systems
+    <title>Welcome to Guerrilla Sky Systems
     </title>
 </head>
 <body style="padding-top: 20px; background-color:black"">
@@ -40,7 +40,7 @@ $airport3code = "APH";
         <div>
             <div class="panel panel-default" style="background-image: url(sky-383823_640.jpg); background-size: cover; ">
                 <div class="panel-heading" style="text-align: center;">
-                    <h1>Guerilla Sky Systems</h1>
+                    <h1>Guerrilla Sky Systems</h1>
                     <h4 class="panel-title">Airport here</h4>
                 </div>
                 <div class="panel-body" >
@@ -104,7 +104,7 @@ $airport3code = "APH";
                             <div class="col-xs-12">
                                 <h5 style="text-align: center;">  Contact : 3303303330</h5>
                                 <h5 style="text-align: center;">  Address : 100 E lane Nowhere</h5>
-                                <h5 style="text-align: center;" >  Copyright Guerilla Sky Systems 2017</h5>
+                                <h5 style="text-align: center;" >  Copyright Guerrilla Sky Systems 2017</h5>
 
                             </div>
 
