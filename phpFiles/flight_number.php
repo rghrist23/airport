@@ -1,3 +1,25 @@
+<?php
+//starting curl service
+$ch = curl_init();
+//getting flight var from index.php
+$flight = $_POST['Flight_number'];
+//contacting server
+curl_setopt($ch,CURLOPT_URL, "http://rghrist23.pythonanywhere.com/flight_number/" . $flight);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+//executing server
+$output = curl_exec($ch);
+//closing server
+curl_close($ch);
+
+$output = json_decode($output);
+$airportName = "Airport Here";
+$airport3code = "APH";
+//indexes: 0 = flight_numb, 1=destination, 2=num_passengers
+//3=departure time, 4= arrival time, 5=company name, 6=plane id
+?>
+
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -28,17 +50,17 @@
 
                                     <div class="col-xs-6">
                                         <h5 style="text-align:center"><u>Flight Number</u></h5>
-                                        <h4 style="text-align:center">U213F</h4>
+                                        <h4 style="text-align:center"><?php echo $output[0][0]; ?></h4>
                                     </div>
                                     <div class="col-xs-6">
                                         <h5 style="text-align:center"><u>Flight Gate</u></h5>
-                                        <h4 style="text-align:center">B21<br></h4>
+                                        <h4 style="text-align:center"><?php echo $output[0][7];?><br></h4>
 
                                     </div>
 
-                                
+
                                 <div class="col-xs-2">
-                                    <h5 style="text-align:center">CAK</h5>
+                                    <h5 style="text-align:center"><?php echo $airport3code;?></h5>
                                 </div>
                                 <div class="col-xs-2">
                                     <img class="center-block" src="flightout.JPG">
@@ -48,7 +70,7 @@
                                     <h5 style="text-align:center">Feb 28 2017</h5>
                                 </div>
                                 <div class="col-xs-4">
-                                    <h5 style="text-align:center">5:00am</h5>
+                                    <h5 style="text-align:center"><?php echo $output[0][3] ?></h5>
 
                                 </div>
                             </div>
@@ -57,7 +79,7 @@
                             <div class="row">
 
                                 <div class="col-xs-2">
-                                    <h5 style="text-align:center">LGA</h5>
+                                    <h5 style="text-align:center"><?php echo $airport3code;?></h5>
                                 </div>
                                 <div class="col-xs-2">
                                     <img class="center-block" src="flightin.JPG">
@@ -67,12 +89,12 @@
                                     <h5 style="text-align:center">Feb 28 2017</h5>
                                 </div>
                                 <div class="col-xs-4">
-                                    <h5 style="text-align:center">7:20am</h5>
+                                    <h5 style="text-align:center"><?php echo $output[0][4];?></h5>
 
                                 </div>
                             </div>
                         </div>
-                        <p style="text-align: center;">Airline: Southwest</p>
+                        <p style="text-align: center;">Airline: <?php echo $output [0][5];?></p>
                     </div>
                         <form action="index.php" method="post">
                             <button type="submit" class="btn btn-success btn-lg btn-block">Back</button>

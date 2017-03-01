@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -58,13 +59,15 @@
                         <button class="btn btn-block btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Airlines
                             <span class="caret"></span></button>
                         <ul class="dropdown-menu">
-                            <li><a href="airline.php">Delta</a></li>
-                            <li><a href="airline.php">Southwest</a></li>
-                            <li><a href="airline.php">United Airlines</a></li>
-                            <li><a href="airline.php">American Airlines</a></li>
-                            <li><a href="airline.php">JetBlue</a></li>
-                            <li><a href="airline.php">Spirit</a></li>
-                            <li><a href="airline.php">Frontier</a></li>
+                            <form action="airline.php" method="post">
+                                <li><input class="btn btn-link" name="company" type="submit" value="Delta"></input></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="Southwest"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="United Airlines"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="American"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="JetBlue"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="Spirit"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="Frontier"></a></li>
+                            </form>
                         </ul>
                     </div>
                 </div>

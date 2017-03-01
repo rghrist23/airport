@@ -1,3 +1,24 @@
+<?php
+//starting curl service
+$ch = curl_init();
+//getting flight var from index.php
+$airline = $_POST['company'];
+//contacting server
+curl_setopt($ch,CURLOPT_URL, "http://rghrist23.pythonanywhere.com/airline_flight/" . $airline);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+//executing server
+$output = curl_exec($ch);
+//closing server
+curl_close($ch);
+
+$output = json_decode($output);
+$airportName = "Airport Here";
+$airport3code = "APH";
+//indexes: 0 = flight_numb, 1=destination, 2=num_passengers
+//3=departure time, 4= arrival time, 5=company name, 6=plane id
+?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -50,30 +71,23 @@
                     <div class="jumbotron col-xs-12" style="padding: 2px;">
                         <p style="text-align: center;">Airline Name</p>
                         <table class="center" style="text-align: center;">
-                            <tr class="">
-                                <th>Flight#</th>
-                                <th>Destination</th>
-                                <th>Departure</th>
-                                <th>Gate</th>
-                            </tr>
                             <tr>
-                                <td>U213F</td>
-                                <td>Chicago</td>
-                                <td>5:00 AM</td>
-                                <td>B5</td>
+                                <td>Flight#</td>
+                                <td>Destination</td>
+                                <td>Departure</td>
+                                <td>Gate</td>
                             </tr>
+                            <?php
+                            foreach ($output as $flight): ?>
                             <tr>
-                                <td>Z148G</td>
-                                <td>San Francisco</td>
-                                <td>9:15AM</td>
-                                <td>C21</td>
+                                <td><?php echo $flight[0] ?></td>
+                                <td><?php echo $flight[1] ?></td>
+                                <td><?php echo $flight[3] ?></td>
+                                <td><?php echo $flight[7] ?></td>
                             </tr>
-                            <tr>
-                                <td>D903M</td>
-                                <td>Paris</td>
-                                <td>4:45 PM</td>
-                                <td>G10</td>
-                            </tr>
+
+                            <?php endforeach;?>
+
                         </table>
                     </div>
                     <form action="index.php" method="post">
