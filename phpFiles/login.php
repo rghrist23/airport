@@ -41,7 +41,7 @@
         <div>
             <div class="panel panel-default" style="background-image: url(sky-383823_640.jpg); background-size: cover; ">
                 <div class="panel-heading" style="text-align: center;">
-                    <h1>Guerrilla Sky Systems</h1>
+                    <h1><img class="img-responsive center-block" src="AMS_banner_dark.png"</h1>
                     <h4 class="panel-title">Airport here</h4>
                 </div>
                 <div class="panel-body" >
