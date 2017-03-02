@@ -19,12 +19,17 @@ create flight_number.php for user
 create user login screen
 
 create airline screen
+
+connected the DB
+
+python API built
+
+logo implemented
 ```
 Task list(to do):
 ```
-hook up website to DB
-
-query db's to get vars to replace hard-coded text
+updated user login with new DB
+take security measures
 
 general code cleanup
 ```
