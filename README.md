@@ -31,9 +31,29 @@ logo implemented
 ```
 Task list(to do):
 ```
-updated user login with new DB
-take security measures
+If you do not know the code base, you will ask Rick questions or Rick will assume
+that you have mastered it. This also applies to php, html, xampp, git and general life.
 
+
+Tables with info (requires new db) -- Shabrina (within 3 days of getting db)
+UX Design of creating, destroying, reading, updating data pages -- Shabrina (ASAP)
+
+Auto logout -- Gil(research) (3/26/17)
+
+
+
+User Permissions -- Aaron (4/1/17)
+
+Database -- Ben (like yesterday ^_^ )
+Data Modeling -- Ben (4/1/17)
+
+User Login -- Rick (due within 2 days of db)
+Sql Errors -- Rick (due within 2 days of db)
+
+
+API functions -- Rick and Ben
+Import CSV -- Aaron (research), Rick (implementation)
+Security -- Gil (research) (3/29/17), Rick (implementation) (4/1/17)
 general code cleanup
 ```
 
