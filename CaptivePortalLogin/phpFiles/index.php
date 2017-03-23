@@ -17,9 +17,9 @@
 <div class="container">
     <div class="row">
         <div>
-            <div class="panel panel-default" style="background-image: url(img/sky-383823_640.jpg); background-size: cover; ">
+            <div class="panel panel-default" style="background-image: url(sky-383823_640.jpg); background-size: cover; ">
                 <div class="panel-heading" style="text-align: center;">
-                    <h1><img src="img/logos/AMS_icon_light.png" class="img-responsive center-block" width="150" height="175" </h1>
+                    <h1><img class="img-responsive center-block" src="AMS_banner_dark.png"</h1>
                     <h4 class="panel-title">Airport here</h4>
                 </div>
                 <div class="panel-body" >
@@ -68,9 +68,6 @@
                 </div>
                     <div class="container col-xs-12">
                         <div class="row">
-                            <div class="panel-heading" style="text-align: center;">
-                                <h1><img class="img-responsive center-block" src="img/logos/AMS_banner_dark.png"</h1>
-                            </div>
                             <div class="col-xs-12">
                                 <h5 style="text-align: center;">  Contact : 3303303330</h5>
                                 <h5 style="text-align: center;">  Address : 100 E lane Nowhere</h5>
