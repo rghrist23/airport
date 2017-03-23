@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="intro-message">
-                    <h1><img src="img/AMS_banner_light.png" class="img-responsive center-block" </h1>
+                    <h1><img src="img/logos/AMS_icon_light.png" class="img-responsive center-block" width="150" height ="229" </h1>
                     <h3>The system for Airports</h3>
                     <hr class="intro-divider">
                     <div class="pagination">
@@ -16,6 +16,7 @@
                         <br> <br>
                         <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" href="#login-overlay">Forgot Password</button>
                     </div>
+                    <h1><img src="img/logos/AMS_banner_dark.png" class="img-responsive center-block" </h1>
                 </div>
             </div>
         </div>
