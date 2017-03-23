@@ -38,9 +38,9 @@ $airport3code = "APH";
 <div class="container">
     <div class="row">
         <div>
-            <div class="panel panel-default" style="background-image: url(sky-383823_640.jpg); background-size: cover; ">
+            <div class="panel panel-default" style="background-image: url(img/sky-383823_640.jpg); background-size: cover; ">
                 <div class="panel-heading" style="text-align: center;">
-                    <h1><img class="img-responsive center-block" src="AMS_banner_dark.png"</h1>
+                    <h1><img class="img-responsive center-block" src="img/logos/AMS_icon_dark.png"</h1>
                     <h4 class="panel-title">Airport here</h4>
                 </div>
                 <div class="panel-body" >
@@ -63,7 +63,7 @@ $airport3code = "APH";
                                     <h5 style="text-align:center"><?php echo $airport3code;?></h5>
                                 </div>
                                 <div class="col-xs-2">
-                                    <img class="center-block" src="flightout.JPG">
+                                    <img class="center-block" src="img/flightout.JPG">
 
                                 </div>
                                 <div class="col-xs-4">
@@ -82,7 +82,7 @@ $airport3code = "APH";
                                     <h5 style="text-align:center"><?php echo $airport3code;?></h5>
                                 </div>
                                 <div class="col-xs-2">
-                                    <img class="center-block" src="flightin.JPG">
+                                    <img class="center-block" src="img/flightin.JPG">
 
                                 </div>
                                 <div class="col-xs-4">
@@ -101,6 +101,9 @@ $airport3code = "APH";
                         </form>
                     <div class="container col-xs-12">
                         <div class="row">
+                            <div class="panel-heading" style="text-align: center;">
+                                <h1><img class="img-responsive center-block" src="img/logos/AMS_banner_dark.png"</h1>
+                            </div>
                             <div class="col-xs-12">
                                 <h5 style="text-align: center;">  Contact : 3303303330</h5>
                                 <h5 style="text-align: center;">  Address : 100 E lane Nowhere</h5>

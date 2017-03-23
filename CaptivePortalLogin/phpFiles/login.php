@@ -39,9 +39,9 @@
 <div class="container">
     <div class="row">
         <div>
-            <div class="panel panel-default" style="background-image: url(sky-383823_640.jpg); background-size: cover; ">
+            <div class="panel panel-default" style="background-image: url(img/sky-383823_640.jpg); background-size: cover; ">
                 <div class="panel-heading" style="text-align: center;">
-                    <h1><img class="img-responsive center-block" src="AMS_banner_dark.png"</h1>
+                    <h1><img class="img-responsive center-block" src="img/logos/AMS_icon_dark.png"</h1>
                     <h4 class="panel-title">Airport here</h4>
                 </div>
                 <div class="panel-body" >
@@ -56,7 +56,7 @@
                                     <h5 style="text-align:center">CAK</h5>
                                 </div>
                                 <div class="col-xs-2">
-                                    <img class="center-block" src="flightout.JPG">
+                                    <img class="center-block" src="img/flightout.JPG">
 
                                 </div>
                                 <div class="col-xs-4">
@@ -74,7 +74,7 @@
                                     <h5 style="text-align:center">LGA</h5>
                                 </div>
                                 <div class="col-xs-2">
-                                    <img class="center-block" src="flightin.JPG">
+                                    <img class="center-block" src="img/flightin.JPG">
 
                                 </div>
                                 <div class="col-xs-4">
@@ -119,6 +119,9 @@
                     </form>
                     <div class="container col-xs-12">
                         <div class="row">
+                            <div class="panel-heading" style="text-align: center;">
+                                <h1><img class="img-responsive center-block" src="img/logos/AMS_banner_dark.png"</h1>
+                            </div>
                             <div class="col-xs-12">
                                 <h5 style="text-align: center;">  Contact : 3303303330</h5>
                                 <h5 style="text-align: center;">  Address : 100 E lane Nowhere</h5>
@@ -133,7 +136,6 @@
         </div>
     </div>
 </div>
-
 
 </body>
 </html>
