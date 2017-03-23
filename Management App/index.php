@@ -28,13 +28,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel" style="color:red;">Login to site.com</h4>
+                <h4 class="modal-title" id="myModalLabel" style="color:red;">Guerrilla Sky Systems</h4>
             </div>
             <div class="modal-body">
                 <div class="row">
                     <div class="col-xs-12" style="color=black;">
                         <div class="well">
-                            <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+                            <form id="loginForm" method="POST" action="dashboard.php" novalidate="novalidate">
                                 <div class="form-group">
                                     <label for="username" class="control-label" style="color: red;">Username</label>
                                     <input type="email" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="Example@gmail.com">
