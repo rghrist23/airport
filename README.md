@@ -50,7 +50,7 @@ User Login -- Rick (due within 2 days of db)
 Sql Errors -- Rick (due within 2 days of db)
 
 
-API functions -- Rick and Ben
+API functions -- Rick and Ben (implemented as needed)
 Import CSV -- Aaron (research), Rick (implementation)
 
 general code cleanup
