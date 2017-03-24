@@ -39,8 +39,7 @@ Tables with info (requires new db) -- Shabrina (within 3 days of getting db)
 UX Design of creating, destroying, reading, updating data pages -- Shabrina (ASAP)
 
 Auto logout -- Gil(research) (3/26/17)
-
-
+Security for passwords in db -- Gil (4/1/17) look at php encrypting passwords
 
 User Permissions -- Aaron (4/1/17)
 
@@ -53,7 +52,7 @@ Sql Errors -- Rick (due within 2 days of db)
 
 API functions -- Rick and Ben
 Import CSV -- Aaron (research), Rick (implementation)
-Security -- Gil (research) (3/29/17), Rick (implementation) (4/1/17)
+
 general code cleanup
 ```
 
