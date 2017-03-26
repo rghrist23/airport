@@ -28,6 +28,9 @@ connected the DB
 python API built
 
 logo implemented
+
+UX Design of creating, destroying, reading, updating data pages -- Shabrina (ASAP) Delivered on 3/24/17
+
 ```
 Task list(to do):
 ```
@@ -36,7 +39,6 @@ that you have mastered it. This also applies to php, html, xampp, git and genera
 
 
 Tables with info (requires new db) -- Shabrina (within 3 days of getting db)
-UX Design of creating, destroying, reading, updating data pages -- Shabrina (ASAP)
 
 Auto logout -- Gil(research) (3/26/17)
 Security for passwords in db -- Gil (4/1/17) look at php encrypting passwords
@@ -48,6 +50,7 @@ Data Modeling -- Ben (4/1/17)
 
 User Login -- Rick (due within 2 days of db)
 Sql Errors -- Rick (due within 2 days of db)
+Crud Pages -- Rick (due 3/30/17)
 
 
 API functions -- Rick and Ben (implemented as needed)
@@ -57,19 +60,20 @@ general code cleanup
 ```
 
 If you want to test the php pages out then you will need to install xampp or wampp
+...
   1. Set up php apache and mysql server
   2. Put files in correct folder
     2a. For xampp, that would be xampp/htdocs/myfolder/myfiles
   3. Navigate to 127.0.0.1 to see the dashboard
   4. If working, go to 127.0.0.1/myfolder and the index.php file should be loaded
-  
+ ...
   
 To use git -->
   https://git-for-windows.github.io/ for windows installation (mac you are on your own, but should be something like sudo apt-get install git-core);
   install the gitbash client for easy use;
   open gitbash in a directory you want the files;
   
-  
+  ...
   
     1. mkdir -p folderNew
     2. cd folderNew
@@ -78,4 +82,5 @@ To use git -->
     5. git status (you want to be in master)
     6. git checkout -b BRANCHNAME
     7. do some work
+	...
 
