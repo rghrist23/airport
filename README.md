@@ -29,7 +29,9 @@ python API built
 
 logo implemented
 
-UX Design of creating, destroying, reading, updating data pages -- Shabrina (ASAP) Delivered on 3/24/17
+UX Design of creating, destroying, reading, updating data pages -- Shabrina (ASAP) Delivered on time 3/24/17
+Database -- Ben (like yesterday ^_^ ) Delivered on time 3/28/17
+Crud page creation -- Rick delivered on time 3/27/17
 
 ```
 Task list(to do):
