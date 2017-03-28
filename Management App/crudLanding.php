@@ -15,20 +15,16 @@
         <div class="col-xs-12">
 
 
-            <form id="loginForm" method="POST" action="crudView.php" novalidate="novalidate">
+            <form id="view" method="POST" action="crudView.php" novalidate="novalidate">
                 <button type="submit" class="btn btn-success ribbon"><h2>View Data</h2></button>
             </form>
 
-            <form id="loginForm" method="POST" action="crudAdd.php" novalidate="novalidate">
+            <form id="add" method="POST" action="crudAdd.php" novalidate="novalidate">
                 <button type="submit" class="btn btn-info ribbon"><h2>Add Data</h2></button>
             </form>
 
-            <form id="loginForm" method="POST" action="crudUpdate.php" novalidate="novalidate">
+            <form id="update" method="POST" action="crudUpdate.php" novalidate="novalidate">
                 <button type="submit" class="btn btn-warning ribbon"><h2>Update Data</h2></button>
-            </form>
-
-            <form id="loginForm" method="POST" action="crudDelete.php" novalidate="novalidate">
-                <button type="submit" class="btn btn-danger ribbon"><h2>Delete Data</h2></button>
             </form>
         </div>
     </div>

@@ -14,9 +14,13 @@
                     <div class="pagination">
                         <button type="button" class="btn btn-success btn-lg" data-toggle="modal" href="#login-overlay">Login</button>
                         <br> <br>
-                        <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" href="#login-overlay">Forgot Password</button>
+                        <form action="forgotPass.php" method="post">
+                        <button type="submit" class="btn btn-warning btn-md" data-to>Forgot Password</button>
+                        </form>
                     </div>
+                    <!--
                     <h1><img src="img/logos/AMS_banner_dark.png" class="img-responsive center-block" </h1>
+                    this does not look right to me - rick -->
                 </div>
             </div>
         </div>
@@ -48,7 +52,6 @@
                                 </div>
                                 <div id="loginErrorMsg" class="alert alert-error hide">Wrong username og password</div>
                                 <button type="submit" class="btn btn-success btn-block">Login</button>
-                                <a href="/forgot/" class="btn btn-default btn-block">Help to login</a>
                             </form>
                         </div>
                     </div>
