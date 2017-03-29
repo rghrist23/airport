@@ -47,12 +47,11 @@ Security for passwords in db -- Gil (4/1/17) look at php encrypting passwords
 
 User Permissions -- Aaron (4/1/17)
 
-Database -- Ben (like yesterday ^_^ )
 Data Modeling -- Ben (4/1/17)
 
-User Login -- Rick (due within 2 days of db)
-Sql Errors -- Rick (due within 2 days of db)
-Crud Pages -- Rick (due 3/30/17)
+User Login -- Rick (Original : 3/29/17) (Update : 4/4/17)
+Sql Errors -- Rick (Original : 3/29/17) (Update : 4/2/17)
+Crud Pages -- Rick (Original : due 3/30/17) (Update : 4/2/17)
 
 
 API functions -- Rick and Ben (implemented as needed)
