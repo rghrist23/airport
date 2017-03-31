@@ -1,9 +1,8 @@
 
 # A very simple Bottle Hello World app for you to get started with...
-from bottle import default_app, route
+from bottle import route, run, template
 import db
 import json
-
 
 
 @route('/')
@@ -30,7 +29,5 @@ def getFlight(flight):
 def helloshabrina():
     return 'Hello Shabrina'
 
-
-
-application = default_app()
+run(host='localhost', port=8010)
 

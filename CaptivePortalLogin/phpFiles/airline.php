@@ -69,7 +69,7 @@ $airport3code = "APH";
                 </div>
                 <div class="panel-body" >
                     <div class="jumbotron col-xs-12" style="padding: 2px;">
-                        <p style="text-align: center;"><?php echo $output[0][5];?></p>
+                        <p style="text-align: center;"><?php echo $output[0][4];?></p>
                         <table class="center" style="text-align: center;">
                             <tr>
                                 <td>Flight#</td>
@@ -82,8 +82,8 @@ $airport3code = "APH";
                             <tr>
                                 <td><?php echo $flight[0] ?></td>
                                 <td><?php echo $flight[1] ?></td>
+                                <td><?php echo $flight[2] ?></td>
                                 <td><?php echo $flight[3] ?></td>
-                                <td><?php echo $flight[7] ?></td>
                             </tr>
 
                             <?php endforeach;?>
@@ -95,8 +95,23 @@ $airport3code = "APH";
                             <span class="caret"></span></button>
                         <ul class="dropdown-menu">
                             <form action="airline.php" method="post">
-                                <li><input class="btn btn-link" name="company" type="submit" value="American"></a></li>
-                                <li><input class="btn btn-link" name="company" type="submit" value="Hawaiian"></a></li>
+
+                                <li><input class="btn btn-link" name="company" type="submit" value="American Airlines"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="Delta Airlines"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="United Airlines"></a></li>
+
+                                <li><input class="btn btn-link" name="company" type="submit" value="Southwest Airlines"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="JetBlue Airways"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="Air Canada"></a></li>
+
+                                <li><input class="btn btn-link" name="company" type="submit" value="Alaska Airlines"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="Spirit Airlines"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="Frontier Airlines"></a></li>
+
+                                <li><input class="btn btn-link" name="company" type="submit" value="Virgin America"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="Hawaiian Airlines"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="Allegiant Air"></a></li>
+
                             </form>
                         </ul>
                     </div>

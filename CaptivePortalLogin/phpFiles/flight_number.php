@@ -54,23 +54,23 @@ $airport3code = "APH";
                                     </div>
                                     <div class="col-xs-6">
                                         <h5 style="text-align:center"><u>Flight Gate</u></h5>
-                                        <h4 style="text-align:center"><?php echo $output[0][7];?><br></h4>
+                                        <h4 style="text-align:center"><?php echo $output[0][1];?><br></h4>
 
                                     </div>
 
 
                                 <div class="col-xs-2">
-                                    <h5 style="text-align:center"><?php echo $airport3code;?></h5>
+                                    <h5 style="text-align:center">Arrival Time</h5>
                                 </div>
                                 <div class="col-xs-2">
                                     <img class="center-block" src="img/flightout.JPG">
 
                                 </div>
                                 <div class="col-xs-4">
-                                    <h5 style="text-align:center">Feb 28 2017</h5>
+                                    <h5 style="text-align:center"><?php echo $output[0][5];?></h5>
                                 </div>
                                 <div class="col-xs-4">
-                                    <h5 style="text-align:center"><?php echo $output[0][3] ?></h5>
+                                    <h5 style="text-align:center"><?php echo $output[0][2] ?></h5>
 
                                 </div>
                             </div>
@@ -79,22 +79,22 @@ $airport3code = "APH";
                             <div class="row">
 
                                 <div class="col-xs-2">
-                                    <h5 style="text-align:center"><?php echo $airport3code;?></h5>
+                                    <h5 style="text-align:center">Departure Time</h5>
                                 </div>
                                 <div class="col-xs-2">
                                     <img class="center-block" src="img/flightin.JPG">
 
                                 </div>
                                 <div class="col-xs-4">
-                                    <h5 style="text-align:center">Feb 28 2017</h5>
+                                    <h5 style="text-align:center"><?php echo $output[0][5];?></h5>
                                 </div>
                                 <div class="col-xs-4">
-                                    <h5 style="text-align:center"><?php echo $output[0][4];?></h5>
+                                    <h5 style="text-align:center"><?php echo $output[0][3];?></h5>
 
                                 </div>
                             </div>
                         </div>
-                        <p style="text-align: center;">Airline: <?php echo $output [0][5];?></p>
+                        <p style="text-align: center;">Airline: <?php echo $output [0][4];?></p>
                     </div>
                         <form action="index.php" method="post">
                             <button type="submit" class="btn btn-success btn-lg btn-block">Back</button>
