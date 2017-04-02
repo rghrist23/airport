@@ -11,7 +11,6 @@
     curl_close($ch);
 
     $output = json_decode($output);
-    print_r($output);
 
 
 if (!(empty($_POST['business']))) {
@@ -78,7 +77,7 @@ else if (!(empty($_POST['employee']))){
                 <tr>
                     <td><?php echo $flight[0] ?></td>
                     <td><?php echo $flight[5] ?></td>
-                    <td><?php echo $flight[7] ?></td>
+                    <td><?php echo $flight[8] ?></td>
                 </tr>
 
             <?php endforeach;?>
