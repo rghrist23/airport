@@ -52,10 +52,9 @@ else if (!(empty($_POST['employee']))){
 
 <body>
 <div class="container-fluid">
-    <div class="row">
+    <div class="row" style="text-align: center">
         <h2>Data Viewer</h2>
     </div>
-    <h2>Switch to:</h2>
     <div class="col-xs-6">
         <div class="dropdown">
                     <button class="btn btn-block btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Airlines
