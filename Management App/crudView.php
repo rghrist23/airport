@@ -11,12 +11,14 @@
     curl_close($ch);
 
     $output = json_decode($output);
-
+    $airline = true;
+    $business = false;
+    $employee = false;
 
 if (!(empty($_POST['business']))) {
 
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "http://rghrist23.pythonanywhere.com/airline_flight/" . $airline);
+    curl_setopt($ch, CURLOPT_URL, "http://rghrist23.pythonanywhere.com/viewBiz");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 //executing server
     $output = curl_exec($ch);
@@ -24,10 +26,12 @@ if (!(empty($_POST['business']))) {
     curl_close($ch);
 
     $output = json_decode($output);
+    $airline = false;
+    $business = true;
 }
 else if (!(empty($_POST['employee']))){
     $ch = curl_init();
-    curl_setopt($ch,CURLOPT_URL, "http://rghrist23.pythonanywhere.com/airline_flight/" . $airline);
+    curl_setopt($ch,CURLOPT_URL, "http://rghrist23.pythonanywhere.com/viewEmp");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 //executing server
     $output = curl_exec($ch);
@@ -35,13 +39,14 @@ else if (!(empty($_POST['employee']))){
     curl_close($ch);
 
     $output = json_decode($output);
+    $business = false;
+    $airline = false;
+    $employee = true;
 
 
 }
-//indexes: 0 = flight_numb, 1=destination, 2=num_passengers
-//3=departure time, 4= arrival time, 5=company name, 6=plane id
 ?>
-<link rel="stylesheet" href="css/crudCSS.css">
+<!--<link rel="stylesheet" href="css/crudCSS.css">-->
 
 
 
@@ -64,23 +69,67 @@ else if (!(empty($_POST['employee']))){
                     </ul>
         </div>
     </div>
-        <table class = "data">
+        <table class = "table-bordered table ">
             <!--Clicking on edit button will begin edit overlay-->
             <!--Clicking on delete button will begin delete overlay-->
+            <?php if($airline) : ?>
+
             <tr>
                 <th>No</th>
                 <th>Airlines</th>
                 <th>Date</th>
+                <th>Destination</th>
             </tr>
             <?php
             foreach ($output as $flight): ?>
                 <tr>
                     <td><?php echo $flight[0] ?></td>
-                    <td><?php echo $flight[5] ?></td>
-                    <td><?php echo $flight[8] ?></td>
+                    <td><?php echo $flight[1] ?></td>
+                    <td><?php echo $flight[2] ?></td>
+                    <td><?php echo $flight[3] ?></td>
                 </tr>
 
             <?php endforeach;?>
+                <?php elseif ($business) : ?>
+                <tr>
+                    <th>Name</th>
+                    <th>Rent</th>
+                    <th>Income</th>
+                    <th>Location</th>
+                    <th>Lease Time</th>
+                </tr>
+                <?php
+                foreach ($output as $businessInfo): ?>
+                    <tr>
+                        <td><?php echo $businessInfo[0] ?></td>
+                        <td><?php echo $businessInfo[1] ?></td>
+                        <td><?php echo $businessInfo[2] ?></td>
+                        <td><?php echo $businessInfo[3] ?></td>
+                        <td><?php echo $businessInfo[4] ?></td>
+                    </tr>
+
+                <?php endforeach;?>
+                <?php elseif($employee) : ?>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                    <th>Security Level</th>
+                    <th>Position</th>
+                </tr>
+                <?php
+                foreach ($output as $employeeInfo): ?>
+                    <tr>
+                        <td><?php echo $employeeInfo[0] ?></td>
+                        <td><?php echo $employeeInfo[1] ?></td>
+                        <td><?php echo $employeeInfo[2] ?></td>
+                        <td><?php echo $employeeInfo[3] ?></td>
+                        <td><?php echo $employeeInfo[4] ?></td>
+                    </tr>
+
+                <?php endforeach;?>
+            <?php endif; ?>
+
         </table>
     </div>
 

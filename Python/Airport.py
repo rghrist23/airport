@@ -1,8 +1,9 @@
 
 # A very simple Bottle Hello World app for you to get started with...
-from bottle import route, run, template
+from bottle import default_app, route
 import db
 import json
+
 
 
 @route('/')
@@ -25,9 +26,19 @@ def getFlight(flight):
     return json.dumps(db.getFlightNumber(flight))
 
 
-@route('/manager_permissions')
-def helloshabrina():
-    return 'Hello Shabrina'
+@route('/viewFlights')
+def viewFlights():
+    return json.dumps(db.getAirlines())
 
-run(host='localhost', port=8010)
+@route('/viewBiz')
+def viewBiz():
+    return json.dumps(db.getBiz())
+
+@route('/viewEmp')
+def viewEmp():
+    return json.dumps(db.getEmp())
+
+
+
+application = default_app()
 
