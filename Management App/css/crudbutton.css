@@ -16,23 +16,42 @@ button:active {
     outline:none;
 }
 
-button.ribbon {
+button.img-info{
+    background: url(../img/add-icon.png) no-repeat;
+    background-size: 250px 250px;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
 
+button.img-success{
+    background: url(../img/Files-View-File-icon.png) no-repeat;
+    background-size: 250px 250px;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+
+button.img-warning{
+    background: url(../img/Pencil-icon.png) no-repeat;
+    background-size: 250px 250px;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+
+button.ribbon {
     outline:none;
     outline-color: transparent;
 }
-button.ribbon:before, button.ribbon:after {
-    top: 5px;
-}
+
 button.ribbon:before {
     border-color: #53dab6 #53dab6 #53dab6 transparent;
-    left: -25px;
-    border-width: 17px;
+    
 }
 button.ribbon:after {
     border-color: #53dab6 transparent #53dab6 #53dab6;
-    right: -25px;
-    border-width: 17px;
+    
 }
 
 button:before, button:after {
