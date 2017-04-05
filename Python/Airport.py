@@ -7,7 +7,7 @@ import json
 
 @route('/')
 def hello_world():
-    return 'Hello from Bottle! KOTAKsefoseofoeU'
+    return 'Hello from Bottle!'
 
 
 @route('/airline_flight/<company>')

@@ -4,7 +4,7 @@ import sqlite3
 def getairlineFlights(company):
     conn = sqlite3.connect("C:/xampp/htdocs/airport/CaptivePortalLogin/AMS_Database_Rev5.db")
     cursor = conn.cursor()
-    cursor.execute('SELECT flight_number, destination, departure_time, gate, call_sign FROM flight, plane WHERE flight.plane_id = plane.plane_id AND plane.airline_name = "%s"' % (company))
+    cursor.execute('SELECT flight_number, destination, departure_time, gate, airline_name, call_sign FROM flight, plane WHERE flight.plane_id = plane.plane_id AND plane.airline_name = "%s"' % (company))
     return cursor.fetchall()
 
 

@@ -72,18 +72,20 @@ $airport3code = "APH";
                         <p style="text-align: center;"><?php echo $output[0][4];?></p>
                         <table class="center" style="text-align: center;">
                             <tr>
-                                <td>Flight#</td>
-                                <td>Destination</td>
-                                <td>Departure</td>
-                                <td>Gate</td>
+                                <td style="text-align: center;">Flight#</td>
+                                <td style="text-align: center;">Destination</td>
+                                <td style="text-align: center;">Call Sign</td>
+                                <td style="text-align: center;">Departure</td>
+                                <td style="text-align: center;">Gate</td>
                             </tr>
                             <?php
                             foreach ($output as $flight): ?>
                             <tr>
-                                <td><?php echo $flight[0] ?></td>
-                                <td><?php echo $flight[1] ?></td>
-                                <td><?php echo $flight[2] ?></td>
-                                <td><?php echo $flight[3] ?></td>
+                                <td style="text-align: center;"><?php echo $flight[0] ?></td>
+                                <td style="text-align: center;"><?php echo $flight[1] ?></td>
+                                <td style="text-align: center;"><?php echo $flight[5] ?></td>
+                                <td style="text-align: center;"><?php echo $flight[2] ?></td>
+                                <td style="text-align: center;"><?php echo $flight[3] ?></td>
                             </tr>
 
                             <?php endforeach;?>
