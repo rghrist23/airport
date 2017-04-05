@@ -32,6 +32,10 @@ logo implemented
 UX Design of creating, destroying, reading, updating data pages -- Shabrina (ASAP) Delivered on time 3/24/17
 Database -- Ben (like yesterday ^_^ ) Delivered on time 3/28/17
 Crud page creation -- Rick delivered on time 3/27/17
+Sql Errors -- Rick (Original : 3/29/17) (Update : 4/2/17)
+Crud Pages -- Rick (Original : due 3/30/17) (Update : 4/2/17) delivered 4/2/17
+Auto logout -- Gil(research) (3/26/17) delivered 3/28/17
+
 
 ```
 Task list(to do):
@@ -42,7 +46,6 @@ that you have mastered it. This also applies to php, html, xampp, git and genera
 
 Tables with info (requires new db) -- Shabrina (within 3 days of getting db)
 
-Auto logout -- Gil(research) (3/26/17)
 Security for passwords in db -- Gil (4/1/17) look at php encrypting passwords
 
 User Permissions -- Aaron (4/1/17)
@@ -50,8 +53,7 @@ User Permissions -- Aaron (4/1/17)
 Data Modeling -- Ben (4/1/17)
 
 User Login -- Rick (Original : 3/29/17) (Update : 4/4/17)
-Sql Errors -- Rick (Original : 3/29/17) (Update : 4/2/17)
-Crud Pages -- Rick (Original : due 3/30/17) (Update : 4/2/17)
+
 
 
 API functions -- Rick and Ben (implemented as needed)
