@@ -1,21 +1,23 @@
 <?php
 //starting curl service
 $ch = curl_init();
+
 //getting flight var from index.php
 $flight = $_POST['Flight_number'];
+
 //contacting server
 curl_setopt($ch,CURLOPT_URL, "http://rghrist23.pythonanywhere.com/flight_number/" . $flight);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
 //executing server
 $output = curl_exec($ch);
+
 //closing server
 curl_close($ch);
 
 $output = json_decode($output);
-$airportName = "Airport Here";
-$airport3code = "APH";
-//indexes: 0 = flight_numb, 1=destination, 2=num_passengers
-//3=departure time, 4= arrival time, 5=company name, 6=plane id
+$airportName = "Guerrilla Airport";
+
 ?>
 
 
@@ -41,11 +43,12 @@ $airport3code = "APH";
             <div class="panel panel-default" style="background-image: url(img/sky-383823_640.jpg); background-size: cover; ">
                 <div class="panel-heading" style="text-align: center;">
                     <h1><img src="img/logos/AMS_icon_light.png" class="img-responsive center-block" width="150" height="175" </h1>
-                    <h4 class="panel-title">Airport here</h4>
+                    <h4 class="panel-title" style="text-align: center; font-size: 20px;"><b><?php echo $airportName ?></b></h4>
                 </div>
                 <div class="panel-body" >
                     <div class="jumbotron jumbotron-fluid" style="padding:0;">
                         <div class="container">
+                            <h3 style="text-align: center;"><?php echo $output [0][4];?></h3>
                             <div class="row">
 
                                     <div class="col-xs-6">
@@ -55,9 +58,7 @@ $airport3code = "APH";
                                     <div class="col-xs-6">
                                         <h5 style="text-align:center"><u>Flight Gate</u></h5>
                                         <h4 style="text-align:center"><?php echo $output[0][1];?><br></h4>
-
                                     </div>
-
 
                                 <div class="col-xs-2">
                                     <h5 style="text-align:center">Arrival Time</h5>
@@ -94,7 +95,6 @@ $airport3code = "APH";
                                 </div>
                             </div>
                         </div>
-                        <p style="text-align: center;">Airline: <?php echo $output [0][4];?></p>
                     </div>
                         <form action="index.php" method="post">
                             <button type="submit" class="btn btn-success btn-lg btn-block">Back</button>
@@ -105,12 +105,11 @@ $airport3code = "APH";
                                 <h1><img class="img-responsive center-block" src="img/logos/AMS_banner_dark.png"</h1>
                             </div>
                             <div class="col-xs-12">
-                                <h5 style="text-align: center;">  Contact : 3303303330</h5>
-                                <h5 style="text-align: center;">  Address : 100 E lane Nowhere</h5>
-                                <h5 style="text-align: center;" >  Copyright Guerrilla Sky Systems 2017</h5>
+                                <h5 style="text-align: center;">  Contact: 330-330-3330</h5>
+                                <h5 style="text-align: center;">  Address: 100 E lane Nowhere</h5>
+                                <h5 style="text-align: center;">  Copyright Guerrilla Sky Systems 2017</h5>
 
                             </div>
-
                         </div>
                     </div>
                 </div>

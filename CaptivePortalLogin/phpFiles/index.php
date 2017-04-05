@@ -1,3 +1,9 @@
+<?php
+
+$airportName = "Guerrilla Airport";
+
+?>
+
 
 <!doctype html>
 <html lang="en">
@@ -9,8 +15,9 @@
     <link rel="stylesheet" href="bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Welcome to Guerrilla Sky Systems
-    </title>
+
+    <title > Welcome to Guerrilla Sky Systems </title>
+
 </head>
 <body style="padding-top: 20px; background-color:black"">
 
@@ -20,7 +27,7 @@
             <div class="panel panel-default" style="background-image: url(img/sky-383823_640.jpg); background-size: cover; ">
                 <div class="panel-heading" style="text-align: center;">
                     <h1><img src="img/logos/AMS_icon_light.png" class="img-responsive center-block" width="150" height="175" </h1>
-                    <h4 class="panel-title">Airport here</h4>
+                    <h4 class="panel-title" style="text-align: center; font-size: 20px;"><b><?php echo $airportName ?></b></h4>
                 </div>
                 <div class="panel-body" >
                     <div class="jumbotron" style="padding: 8px;">
@@ -36,24 +43,26 @@
 
                             <div class="col-xs-12">
                                 <button type="submit" formaction="login.php" class="btn btn-success btn-lg btn-block">Login</button>
-
-
-
                             </div>
                         </fieldset>
                     </form>
+
                     <p></p>
-                    <p align="center">No login? <u>Look up flight info below</u>.</p>
+
+                        <p align="center">No login?</p>
+                        <p align="center"><u>Look up flight info below.</u></p>
+
                     <form action="flight_number.php" method="post">
                         <div class=input-group>
                             <input class="form-control" placeholder="Flight#" name="Flight_number" type="text">
                             <span class="input-group-btn">
-                                    <input class="btn btn-md btn-success" type="submit" value="Go">
-
-                                </span>
+                                <input class="btn btn-md btn-success" type="submit" value="Go">
+                            </span>
                         </div>
                     </form>
+
                     <p></p>
+
                     <h5 style="text-align: center;">Or</h5>
                     <div class="dropdown">
                         <button class="btn btn-block btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Airlines
@@ -87,8 +96,8 @@
                                 <h1><img class="img-responsive center-block" src="img/logos/AMS_banner_dark.png"</h1>
                             </div>
                             <div class="col-xs-12">
-                                <h5 style="text-align: center;">  Contact : 3303303330</h5>
-                                <h5 style="text-align: center;">  Address : 100 E lane Nowhere</h5>
+                                <h5 style="text-align: center;">  Contact: 330-330-3330</h5>
+                                <h5 style="text-align: center;">  Address: 100 E lane Nowhere</h5>
                                 <h5 style="text-align: center;" >  Copyright Guerrilla Sky Systems 2017</h5>
 
                             </div>

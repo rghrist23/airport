@@ -1,3 +1,26 @@
+<?php
+//starting curl service
+$ch = curl_init();
+
+//getting login var from index.php
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+//contacting server
+curl_setopt($ch,CURLOPT_URL, "http://rghrist23.pythonanywhere.com/user_login/" . $email, $password);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+//executing server
+$output = curl_exec($ch);
+
+//closing server
+curl_close($ch);
+
+$output = json_decode($output);
+$airportName = "Guerrilla Airport";
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -42,14 +65,14 @@
             <div class="panel panel-default" style="background-image: url(img/sky-383823_640.jpg); background-size: cover; ">
                 <div class="panel-heading" style="text-align: center;">
                     <h1><img src="img/logos/AMS_icon_light.png" class="img-responsive center-block" width="150" height="175" </h1>
-                    <h4 class="panel-title">Airport here</h4>
+                    <h4 class="panel-title" style="text-align: center; font-size: 20px;"><b><?php echo $airportName ?></b></h4>
                 </div>
                 <div class="panel-body" >
                    <div class="jumbotron jumbotron-fluid" style="padding:0;">
                         <div class="container">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <h3 style="text-align: center;"> Welcome Username!</h3>
+                                    <h3 style="text-align: center;"> Welcome User ID: <?php $output[0] ?> !</h3>
                                 </div>
 
                                 <div class="col-xs-2">
@@ -123,8 +146,8 @@
                                 <h1><img class="img-responsive center-block" src="img/logos/AMS_banner_dark.png"</h1>
                             </div>
                             <div class="col-xs-12">
-                                <h5 style="text-align: center;">  Contact : 3303303330</h5>
-                                <h5 style="text-align: center;">  Address : 100 E lane Nowhere</h5>
+                                <h5 style="text-align: center;">  Contact: 330-330-3330</h5>
+                                <h5 style="text-align: center;">  Address: 100 E lane Nowhere</h5>
                                 <h5 style="text-align: center;" >  Copyright Guerrilla Sky Systems 2017</h5>
 
                             </div>
