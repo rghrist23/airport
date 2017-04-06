@@ -64,10 +64,10 @@ $airportName = "Guerrilla Airport";
 <div class="container">
     <div class="row">
         <div>
-            <div class="panel panel-default" style="background-image: url(img/sky-383823_640.jpg); background-size: cover; ">
-                <div class="panel-heading" style="text-align: center;">
-                    <h1><img src="img/logos/AMS_icon_light.png" class="img-responsive center-block" width="150" height="175" </h1>
-                    <h4 class="panel-title" style="text-align: center; font-size: 20px;"><b><?php echo $airportName ?></b></h4>
+            <div class="panel panel-default" style="background-image: url(img/sky-383823_640.jpg); background-size: cover;">
+                <div class="panel-heading" style="text-align: center; background-color: transparent; color: #000000;">
+                    <a href="index.php"><img src="img/logos/AMS_icon_light.png" width="150" height="200" style="padding: 10px"></a>
+                    <h4 class="panel-title" style="text-align: center; font-size: 30px;"><?php echo $airportName ?></h4>
                 </div>
                 <div class="panel-body" >
                     <div class="jumbotron col-xs-12" style="padding: 2px;">
@@ -132,8 +132,8 @@ $airportName = "Guerrilla Airport";
                             </div>
                             <div class="col-xs-12">
                                 <h5 style="text-align: center;">  Contact: 330-330-3330</h5>
-                                <h5 style="text-align: center;">  Address: 100 E lane Nowhere</h5>
-                                <h5 style="text-align: center;" >  Copyright Guerrilla Sky Systems 2017</h5>
+                                <h5 style="text-align: center;">  Address: 100 E Lane Nowhere</h5>
+                                <h5 style="text-align: center;" >  Copyright Guerrilla Sky Systems 2017&#153</h5>
 
                             </div>
 
