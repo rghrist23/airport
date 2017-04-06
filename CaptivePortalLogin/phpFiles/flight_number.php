@@ -40,7 +40,7 @@ $airportName = "Guerrilla Airport";
 <div class="container">
     <div class="row">
         <div>
-            <div class="panel panel-default" style="background-image: url(img/sky-383823_640.jpg); background-size: cover;">
+            <div class="panel panel-default" round-image: url(img/sky-383823_640.jpg); background-size: cover;">
                 <div class="panel-heading" style="text-align: center; background-color: transparent; color: #000000;">
                     <a href="index.php"><img src="img/logos/AMS_icon_light.png" width="150" height="200" style="padding: 10px"></a>
                     <h4 class="panel-title" style="text-align: center; font-size: 30px;"><?php echo $airportName ?></h4>
