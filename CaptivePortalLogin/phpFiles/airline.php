@@ -1,21 +1,23 @@
 <?php
 //starting curl service
 $ch = curl_init();
+
 //getting flight var from index.php
 $airline = $_POST['company'];
+
 //contacting server
-curl_setopt($ch,CURLOPT_URL, "http://rghrist23.pythonanywhere.com/airline_flight/" . $airline);
+curl_setopt($ch, CURLOPT_URL, "http://rghrist23.pythonanywhere.com/airline_flight/" . $airline);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
 //executing server
 $output = curl_exec($ch);
+
 //closing server
 curl_close($ch);
 
 $output = json_decode($output);
-$airportName = "Airport Here";
-$airport3code = "APH";
-//indexes: 0 = flight_numb, 1=destination, 2=num_passengers
-//3=departure time, 4= arrival time, 5=company name, 6=plane id
+$airportName = "Guerrilla Airport";
+
 ?>
 
 
@@ -29,13 +31,13 @@ $airport3code = "APH";
     <link rel="stylesheet" href="bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Welcome to Guerrilla Sky Systems
-    </title>
+
+    <title>Welcome to Guerrilla Sky Systems</title>
 
     <style>
         table.center {
-            margin-left:auto;
-            margin-right:auto;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         table {
@@ -54,22 +56,27 @@ $airport3code = "APH";
             background-color: #dddddd;
         }
 
-        body {text-align:center;}
+        body {
+            text-align: center;
+        }
     </style>
 </head>
-<body style="padding-top: 20px; background-color:black"">
+
+<body style="padding-top: 20px; background-color:black;">
 
 <div class="container">
     <div class="row">
         <div>
-            <div class="panel panel-default" style="background-image: url(img/sky-383823_640.jpg); background-size: cover; ">
-                <div class="panel-heading" style="text-align: center;">
-                    <h1><img src="img/logos/AMS_icon_light.png" class="img-responsive center-block" width="150" height="175" </h1>
-                    <h4 class="panel-title">Airport here</h4>
+            <div class="panel panel-default"
+                 style="background-image: url(img/sky-383823_640.jpg); background-size: cover;">
+                <div class="panel-heading" style="text-align: center; background-color: transparent; color: #000000;">
+                    <a href="index.php"><img src="img/logos/AMS_icon_light.png" width="150" height="200"
+                                             style="padding: 10px"></a>
+                    <h4 class="panel-title" style="text-align: center; font-size: 30px;"><?php echo $airportName ?></h4>
                 </div>
-                <div class="panel-body" >
+                <div class="panel-body">
                     <div class="jumbotron col-xs-12" style="padding: 2px;">
-                        <p style="text-align: center;"><?php echo $output[0][4];?></p>
+                        <p style="text-align: center;"><?php echo $output[0][4]; ?></p>
                         <table class="center" style="text-align: center;">
                             <tr>
                                 <td style="text-align: center;">Flight#</td>
@@ -80,39 +87,52 @@ $airport3code = "APH";
                             </tr>
                             <?php
                             foreach ($output as $flight): ?>
-                            <tr>
-                                <td style="text-align: center;"><?php echo $flight[0] ?></td>
-                                <td style="text-align: center;"><?php echo $flight[1] ?></td>
-                                <td style="text-align: center;"><?php echo $flight[5] ?></td>
-                                <td style="text-align: center;"><?php echo $flight[2] ?></td>
-                                <td style="text-align: center;"><?php echo $flight[3] ?></td>
-                            </tr>
+                                <tr>
+                                    <td style="text-align: center;"><?php echo $flight[0] ?></td>
+                                    <td style="text-align: center;"><?php echo $flight[1] ?></td>
+                                    <td style="text-align: center;"><?php echo $flight[5] ?></td>
+                                    <td style="text-align: center;"><?php echo $flight[2] ?></td>
+                                    <td style="text-align: center;"><?php echo $flight[3] ?></td>
+                                </tr>
 
-                            <?php endforeach;?>
+                            <?php endforeach; ?>
 
                         </table>
                     </div>
                     <div class="dropdown">
-                        <button class="btn btn-block btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Airlines
+                        <button class="btn btn-block btn-primary btn-lg dropdown-toggle" type="button"
+                                data-toggle="dropdown">Airlines
                             <span class="caret"></span></button>
                         <ul class="dropdown-menu">
                             <form action="airline.php" method="post">
 
-                                <li><input class="btn btn-link" name="company" type="submit" value="American Airlines"></a></li>
-                                <li><input class="btn btn-link" name="company" type="submit" value="Delta Airlines"></a></li>
-                                <li><input class="btn btn-link" name="company" type="submit" value="United Airlines"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit"
+                                           value="American Airlines"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="Delta Airlines"></a>
+                                </li>
+                                <li><input class="btn btn-link" name="company" type="submit"
+                                           value="United Airlines"></a></li>
 
-                                <li><input class="btn btn-link" name="company" type="submit" value="Southwest Airlines"></a></li>
-                                <li><input class="btn btn-link" name="company" type="submit" value="JetBlue Airways"></a></li>
-                                <li><input class="btn btn-link" name="company" type="submit" value="Air Canada"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit"
+                                           value="Southwest Airlines"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit"
+                                           value="JetBlue Airways"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="Air Canada"></a>
+                                </li>
 
-                                <li><input class="btn btn-link" name="company" type="submit" value="Alaska Airlines"></a></li>
-                                <li><input class="btn btn-link" name="company" type="submit" value="Spirit Airlines"></a></li>
-                                <li><input class="btn btn-link" name="company" type="submit" value="Frontier Airlines"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit"
+                                           value="Alaska Airlines"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit"
+                                           value="Spirit Airlines"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit"
+                                           value="Frontier Airlines"></a></li>
 
-                                <li><input class="btn btn-link" name="company" type="submit" value="Virgin America"></a></li>
-                                <li><input class="btn btn-link" name="company" type="submit" value="Hawaiian Airlines"></a></li>
-                                <li><input class="btn btn-link" name="company" type="submit" value="Allegiant Air"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="Virgin America"></a>
+                                </li>
+                                <li><input class="btn btn-link" name="company" type="submit"
+                                           value="Hawaiian Airlines"></a></li>
+                                <li><input class="btn btn-link" name="company" type="submit" value="Allegiant Air"></a>
+                                </li>
 
                             </form>
                         </ul>
@@ -129,12 +149,11 @@ $airport3code = "APH";
                                 <h1><img class="img-responsive center-block" src="img/logos/AMS_banner_dark.png"</h1>
                             </div>
                             <div class="col-xs-12">
-                                <h5 style="text-align: center;">  Contact : 3303303330</h5>
-                                <h5 style="text-align: center;">  Address : 100 E lane Nowhere</h5>
-                                <h5 style="text-align: center;" >  Copyright Guerrilla Sky Systems 2017</h5>
+                                <h5 style="text-align: center;"> Contact : 3303303330</h5>
+                                <h5 style="text-align: center;"> Address : 100 E lane Nowhere</h5>
+                                <h5 style="text-align: center;"> Copyright Guerrilla Sky Systems 2017</h5>
 
                             </div>
-
                         </div>
                     </div>
                 </div>
