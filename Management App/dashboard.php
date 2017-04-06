@@ -29,7 +29,6 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 //executing server
 $flightOutput = curl_exec($ch);
 
-//closing server
 $flightOutput = json_decode($flightOutput);
 
 $foursixam = 0;
@@ -44,11 +43,13 @@ $eighttenpm = 0;
 $tentwelveam = 0;
 $twelvetwoam = 0;
 $twofouram = 0;
+curl_close($ch);
 
 //foreach ($flightOutput as $flight) {
 //}
+$ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "http://rghrist23.pythonanywhere.com/viewFlightTime");
+curl_setopt($ch, CURLOPT_URL, "http://rghrist23.pythonanywhere.com/viewEmpJobs");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 //executing server
 $empOutput = curl_exec($ch);
@@ -56,22 +57,22 @@ $empOutput = curl_exec($ch);
 //closing server
 $empOutput = json_decode($empOutput);
 
-curl_close($ch);
 
 $janitor = 0;
 $pilot = 0;
 $flightattendant = 0;
 foreach ($empOutput as $employee){
-    if ($flightOutput == "Janitor") {
+    if ($employee[0] == "Janitor") {
         $janitor++;
     }
-    else if ($flightOutput == "Pilot") {
+    else if ($employee[0] == "Pilot") {
         $pilot++;
     }
-    else if ($flightOutput == "Flight Attendant") {
+    else if ($employee[0] == "Flight Attendant") {
         $flightattendant++;
     }
 }
+curl_close($ch);
 
 ?>
 
@@ -103,7 +104,7 @@ foreach ($empOutput as $employee){
                 'red','blue','pink','green','rgb(255,67,169)','brown','yellow', 'purple'
             ],
             colorsSequential: true,
-            yaxisUnitsPre: 'Amount: ',
+            yaxisUnitsPre: 'Flights : ',
             yaxisDecimals: 0,
             yaxis: false,
             backgroundGridVlines: false,
@@ -121,7 +122,8 @@ foreach ($empOutput as $employee){
             exploded: 2,
             donut: true,
             title: "Employee Positions",
-            tooltips: ['Flight Attendant' , 'Janitor', 'Pilot'],
+            tooltips: ['Flight Attendant Total : ' + <?php echo $flightattendant ?>,
+                'Janitor Total : ' + <?php echo $pilot ?>, 'Pilot Total : ' + <?php echo $janitor ?>],
             shadow: true,
             colors: [
                 'Gradient(red:red:red:#faa:red)',
