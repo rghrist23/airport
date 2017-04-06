@@ -149,8 +149,8 @@ $airportName = "Guerrilla Airport";
                                 <h1><img class="img-responsive center-block" src="img/logos/AMS_banner_dark.png"</h1>
                             </div>
                             <div class="col-xs-12">
-                                <h5 style="text-align: center;"> Contact : 330-330-3330</h5>
-                                <h5 style="text-align: center;"> Address : 100 E lane Nowhere</h5>
+                                <h5 style="text-align: center;"> Contact: 330-330-3330</h5>
+                                <h5 style="text-align: center;"> Address: 100 E lane Nowhere</h5>
                                 <h5 style="text-align: center;"> Copyright Guerrilla Sky Systems 2017&#153</h5>
                             </div>
                         </div>
