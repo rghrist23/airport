@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a739844b-5c25-4495-92c7-042460cac323" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CaptivePortalLogin/phpFiles/airline.php" afterPath="$PROJECT_DIR$/CaptivePortalLogin/phpFiles/airline.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CaptivePortalLogin/phpFiles/flight_number.php" afterPath="$PROJECT_DIR$/CaptivePortalLogin/phpFiles/flight_number.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CaptivePortalLogin/phpFiles/index.php" afterPath="$PROJECT_DIR$/CaptivePortalLogin/phpFiles/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CaptivePortalLogin/phpFiles/login.php" afterPath="$PROJECT_DIR$/CaptivePortalLogin/phpFiles/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Airport.py" afterPath="$PROJECT_DIR$/Python/Airport.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/db.py" afterPath="$PROJECT_DIR$/Python/db.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,7 +29,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CaptivePortalLogin/phpFiles/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="-1032">
               <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -47,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CaptivePortalLogin/phpFiles/login.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="362">
@@ -64,8 +58,8 @@
       <file leaf-file-name="flight_number.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CaptivePortalLogin/phpFiles/flight_number.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="99" column="22" lean-forward="true" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
+            <state relative-caret-position="566">
+              <caret line="111" column="106" lean-forward="false" selection-start-line="111" selection-start-column="101" selection-end-line="111" selection-end-column="106" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -88,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="airline.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="airline.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CaptivePortalLogin/phpFiles/airline.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="157" column="26" lean-forward="true" selection-start-line="157" selection-start-column="26" selection-end-line="157" selection-end-column="26" />
+            <state relative-caret-position="566">
+              <caret line="153" column="106" lean-forward="false" selection-start-line="153" selection-start-column="106" selection-end-line="153" selection-end-column="106" />
               <folding />
             </state>
           </provider>
@@ -125,9 +119,9 @@
         <option value="$PROJECT_DIR$/Python/Airport.py" />
         <option value="$PROJECT_DIR$/Python/db.py" />
         <option value="$PROJECT_DIR$/CaptivePortalLogin/phpFiles/index.php" />
-        <option value="$PROJECT_DIR$/CaptivePortalLogin/phpFiles/airline.php" />
         <option value="$PROJECT_DIR$/CaptivePortalLogin/phpFiles/flight_number.php" />
         <option value="$PROJECT_DIR$/CaptivePortalLogin/phpFiles/login.php" />
+        <option value="$PROJECT_DIR$/CaptivePortalLogin/phpFiles/airline.php" />
       </list>
     </option>
   </component>
@@ -340,15 +334,15 @@
       <workItem from="1490853952796" duration="84000" />
       <workItem from="1490935591016" duration="3773000" />
       <workItem from="1491416250282" duration="54000" />
-      <workItem from="1491416746205" duration="20293000" />
+      <workItem from="1491416746205" duration="20537000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37603000" />
+    <option name="totallyTimeSpent" value="37847000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10501066" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -679,17 +673,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CaptivePortalLogin/phpFiles/airline.php">
+    <entry file="file://$PROJECT_DIR$/CaptivePortalLogin/phpFiles/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="157" column="26" lean-forward="true" selection-start-line="157" selection-start-column="26" selection-end-line="157" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="362">
+          <caret line="163" column="26" lean-forward="false" selection-start-line="163" selection-start-column="26" selection-end-line="163" selection-end-column="26" />
+          <folding>
+            <marker date="1491510952610" expanded="true" signature="781:800" ph="..." />
+            <marker date="1491510952610" expanded="true" signature="1258:1298" ph="..." />
+            <marker date="1491510952610" expanded="true" signature="1886:1910" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CaptivePortalLogin/phpFiles/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="-1032">
           <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -702,8 +700,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CaptivePortalLogin/phpFiles/flight_number.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="99" column="22" lean-forward="true" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
+        <state relative-caret-position="566">
+          <caret line="111" column="106" lean-forward="false" selection-start-line="111" selection-start-column="101" selection-end-line="111" selection-end-column="106" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -725,15 +723,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CaptivePortalLogin/phpFiles/login.php">
+    <entry file="file://$PROJECT_DIR$/CaptivePortalLogin/phpFiles/airline.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="163" column="26" lean-forward="false" selection-start-line="163" selection-start-column="26" selection-end-line="163" selection-end-column="26" />
-          <folding>
-            <marker date="1491510952610" expanded="true" signature="781:800" ph="..." />
-            <marker date="1491510952610" expanded="true" signature="1258:1298" ph="..." />
-            <marker date="1491510952610" expanded="true" signature="1886:1910" ph="..." />
-          </folding>
+        <state relative-caret-position="566">
+          <caret line="153" column="106" lean-forward="false" selection-start-line="153" selection-start-column="106" selection-end-line="153" selection-end-column="106" />
+          <folding />
         </state>
       </provider>
     </entry>
