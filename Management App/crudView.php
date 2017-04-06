@@ -1,5 +1,3 @@
-<?php include 'head.html' ?>
-<?php include 'sidebar_navbar.html' ?>
 <?php
     $ch = curl_init();
     curl_setopt($ch,CURLOPT_URL, "http://rghrist23.pythonanywhere.com/viewFlights");
@@ -47,15 +45,16 @@ else if (!(empty($_POST['employee']))){
 }
 ?>
 <!--<link rel="stylesheet" href="css/crudCSS.css">-->
-
+<?php include 'head.html' ?>
+<?php include 'sidebar_navbar.html' ?>
 
 
 <body>
-<div class="container-fluid">
+<div class="container-fluid col-xs-8">
     <div class="row" style="text-align: center">
         <h2>Data Viewer</h2>
     </div>
-    <div class="col-xs-6">
+    <div class="col-xs-8">
         <div class="dropdown">
                     <button class="btn btn-block btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Airlines
                         <span class="caret"></span></button>

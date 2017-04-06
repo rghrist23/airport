@@ -1,6 +1,3 @@
-<?php include 'head.html' ?>
-<?php include 'sidebar_navbar.html' ?>
-
 
 <?php
 $airline = true;
@@ -68,15 +65,19 @@ else if (!(empty($_POST['employee']))){
 
 }
 ?>
+<?php include 'head.html' ?>
+<?php include 'sidebar_navbar.html' ?>
+
+
 <link rel="stylesheet" href="css/crudCSS.css">
 
 <body>
 
-<div id = "container-fluid">
+<div id = "container-fluid col-xs-8">
     <div class="row" style="text-align: center">
         <h2>Data Update</h2>
     </div>
-    <div class="col-xs-12">
+    <div class="col-xs-8">
         <div class="dropdown">
             <button class="btn btn-block btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Airlines
                 <span class="caret"></span></button>
