@@ -91,7 +91,6 @@ if (!empty($_POST['airlineName']) && !empty($_POST['planeNumber'])) {
     </div>
     <form action="crudAdd.php" method="post">
         <?php if ($airline) : ?>
-            <h2 style="text-align: center">Input New Airline</h2>
 
             <table>
                 <tr>
@@ -110,7 +109,6 @@ if (!empty($_POST['airlineName']) && !empty($_POST['planeNumber'])) {
                 </tr>
             </table>
         <?php elseif ($business) : ?>
-            <h2 style="text-align: center">Input New Business</h2>
 
             <table>
                 <tr>
@@ -140,7 +138,6 @@ if (!empty($_POST['airlineName']) && !empty($_POST['planeNumber'])) {
                 </tr>
             </table>
         <?php elseif ($employee) : ?>
-            <h2 style="text-align: center">Input New Employee</h2>
 
             <table>
                 <tr>
