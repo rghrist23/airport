@@ -8,7 +8,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 
 //contacting server
-curl_setopt($ch,CURLOPT_URL, "http://rghrist23.pythonanywhere.com/user_login/" . $email . "/" . $password);
+curl_setopt($ch, CURLOPT_URL, "http://rghrist23.pythonanywhere.com/user_login/" . $email . "/" . $password);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
 curl_setopt($ch2, CURLOPT_URL, "http://rghrist23.pythonanywhere.com/ticket_info/" . $email . "/" . $password);
@@ -48,8 +48,8 @@ print_r($output2);
 
     <style>
         table.center {
-            margin-left:auto;
-            margin-right:auto;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         table {
@@ -69,18 +69,21 @@ print_r($output2);
         }
     </style>
 </head>
-<body style="padding-top: 20px; background-color:black"">
+<body style="padding-top: 20px; background-color:black"
+">
 
 <div class="container">
     <div class="row">
         <div>
-            <div class="panel panel-default" style="background-image: url(img/sky-383823_640.jpg); background-size: cover;">
+            <div class="panel panel-default"
+                 style="background-image: url(img/sky-383823_640.jpg); background-size: cover;">
                 <div class="panel-heading" style="text-align: center; background-color: transparent; color: #000000;">
-                    <a href="index.php"><img src="img/logos/AMS_icon_light.png" width="150" height="200" style="padding: 10px"></a>
+                    <a href="index.php"><img src="img/logos/AMS_icon_light.png" width="150" height="200"
+                                             style="padding: 10px"></a>
                     <h4 class="panel-title" style="text-align: center; font-size: 30px;"><?php echo $airportName ?></h4>
                 </div>
-                <div class="panel-body" >
-                   <div class="jumbotron jumbotron-fluid" style="padding:0;">
+                <div class="panel-body">
+                    <div class="jumbotron jumbotron-fluid" style="padding:0;">
                         <div class="container">
                             <div class="row">
                                 <div class="col-xs-12">
@@ -158,9 +161,9 @@ print_r($output2);
                                 <h1><img class="img-responsive center-block" src="img/logos/AMS_banner_dark.png"</h1>
                             </div>
                             <div class="col-xs-12">
-                                <h5 style="text-align: center;">  Contact: 330-330-3330</h5>
-                                <h5 style="text-align: center;">  Address: 100 E Lane Nowhere</h5>
-                                <h5 style="text-align: center;" >  Copyright Guerrilla Sky Systems 2017&#153</h5>
+                                <h5 style="text-align: center;"> Contact: 330-330-3330</h5>
+                                <h5 style="text-align: center;"> Address: 100 E Lane Nowhere</h5>
+                                <h5 style="text-align: center;"> Copyright Guerrilla Sky Systems 2017&#153</h5>
 
                             </div>
 

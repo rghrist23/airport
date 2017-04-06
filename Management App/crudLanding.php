@@ -4,9 +4,8 @@
 <body>
 
 
-
 <div class="container col-xs-8">
-    <div class="row" align = "center">
+    <div class="row" align="center">
         <h1>Data Manager</h1>
         <br>
     </div>
@@ -16,26 +15,26 @@
         <div class="col-xs-12">
             <table style="width:100%">
                 <tr>
-                    <td align = "center">
+                    <td align="center">
                         <form id="view" method="POST" action="crudView.php" novalidate="novalidate">
-                        <button type="submit" class="btn btn-success img-success"></button>
+                            <button type="submit" class="btn btn-success img-success"></button>
                         </form>
                         <h2>View Data</h2>
                     </td>
-                    <td align = "center">
+                    <td align="center">
                         <form id="add" method="POST" action="crudAdd.php" novalidate="novalidate">
-                        <button type="submit" class="btn btn-info img-info"></button>
+                            <button type="submit" class="btn btn-info img-info"></button>
                         </form>
                         <h2>Add Data</h2>
                     </td>
-                    <td align = "center">
+                    <td align="center">
                         <form id="update" method="POST" action="crudUpdate.php" novalidate="novalidate">
-                        <button type="submit" class="btn btn-warning img-warning"></button>
+                            <button type="submit" class="btn btn-warning img-warning"></button>
                         </form>
                         <h2>Update Data</h2>
                     </td>
                 </tr>
-        
+
             </table>
 
         </div>
