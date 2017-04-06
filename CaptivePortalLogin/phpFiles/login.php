@@ -1,3 +1,36 @@
+<?php
+//starting curl service
+$ch = curl_init();
+$ch2 = curl_init();
+
+//getting login var from index.php
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+//contacting server
+curl_setopt($ch, CURLOPT_URL, "http://rghrist23.pythonanywhere.com/user_login/" . $email . "/" . $password);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+curl_setopt($ch2, CURLOPT_URL, "http://rghrist23.pythonanywhere.com/ticket_info/" . $email . "/" . $password);
+curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
+
+//executing server
+$output = curl_exec($ch);
+$output2 = curl_exec($ch2);
+
+//closing server
+curl_close($ch);
+curl_close($ch2);
+
+// Output
+$output = json_decode($output);
+$output2 = json_decode($output2);
+
+$airportName = "Guerrilla Airport";
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,13 +41,13 @@
     <link rel="stylesheet" href="bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Welcome to Guerrilla Sky Systems
-    </title>
+
+    <title>Welcome to Guerrilla Sky Systems</title>
 
     <style>
         table.center {
-            margin-left:auto;
-            margin-right:auto;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         table {
@@ -34,85 +67,100 @@
         }
     </style>
 </head>
-<body style="padding-top: 20px; background-color:black"">
+
+<body style="padding-top: 20px; background-color:black"
+">
 
 <div class="container">
     <div class="row">
         <div>
-            <div class="panel panel-default" style="background-image: url(img/sky-383823_640.jpg); background-size: cover; ">
-                <div class="panel-heading" style="text-align: center;">
-                    <h1><img src="img/logos/AMS_icon_light.png" class="img-responsive center-block" width="150" height="175" </h1>
-                    <h4 class="panel-title">Airport here</h4>
+            <div class="panel panel-default"
+                 style="background-image: url(img/sky-383823_640.jpg); background-size: cover;">
+                <div class="panel-heading" style="text-align: center; background-color: transparent; color: #000000;">
+                    <a href="index.php"><img src="img/logos/AMS_icon_light.png" width="150" height="200"
+                                             style="padding: 10px"></a>
+                    <h4 class="panel-title" style="text-align: center; font-size: 30px;"><?php echo $airportName ?></h4>
                 </div>
-                <div class="panel-body" >
-                   <div class="jumbotron jumbotron-fluid" style="padding:0;">
+                <div class="panel-body">
+                    <div class="jumbotron jumbotron-fluid" style="padding:0;">
                         <div class="container">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <h3 style="text-align: center;"> Welcome Username!</h3>
+                                    <h3 style="text-align: center;"> Welcome <?php echo $output[0][1] ?>!</h3>
                                 </div>
-
-                                <div class="col-xs-2">
-                                    <h5 style="text-align:center">CAK</h5>
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <h5 style="text-align: center"><u>Ticket Number</u></h5>
+                                        <h4 style="text-align: center"><?php echo $output2[0][5]; ?></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <h5 style="text-align:center"><u>Flight Number</u></h5>
+                                        <h4 style="text-align:center"><?php echo $output2[0][0]; ?></h4>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <h5 style="text-align:center"><u>Flight Gate</u></h5>
+                                        <h4 style="text-align:center"><?php echo $output2[0][1]; ?><br></h4>
+                                    </div>
                                 </div>
-                                <div class="col-xs-2">
-                                    <img class="center-block" src="img/flightout.JPG">
-
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <h5 style="text-align:center">Arrival Time</h5>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <img class="center-block" src="img/flightout.JPG">
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <h5 style="text-align:center"><?php echo $output2[0][4]; ?></h5>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <h5 style="text-align:center"><?php echo $output2[0][2] ?></h5>
+                                    </div>
                                 </div>
-                                <div class="col-xs-4">
-                                    <h5 style="text-align:center">Feb 28 2017</h5>
-                                </div>
-                                <div class="col-xs-4">
-                                    <h5 style="text-align:center">5:00am</h5>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <h5 style="text-align:center">Departure Time</h5>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <img class="center-block" src="img/flightin.JPG">
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <h5 style="text-align:center"><?php echo $output2[0][4]; ?></h5>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <h5 style="text-align:center"><?php echo $output2[0][3]; ?></h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="container">
-                            <div class="row">
-
-                                <div class="col-xs-2">
-                                    <h5 style="text-align:center">LGA</h5>
-                                </div>
-                                <div class="col-xs-2">
-                                    <img class="center-block" src="img/flightin.JPG">
-
-                                </div>
-                                <div class="col-xs-4">
-                                    <h5 style="text-align:center">Feb 28 2017</h5>
-                                </div>
-                                <div class="col-xs-4">
-                                    <h5 style="text-align:center">7:20am</h5>
-
-                                </div>
-                            </div>
+                        <div class="jumbotron col-xs-12" style="padding: 2px;">
+                            <p style="text-align: center;">History</p>
+                            <table class="center" style="text-align: center;">
+                                <tr>
+                                    <th>Flight#</th>
+                                    <th>Destination</th>
+                                    <th>Date</th>
+                                </tr>
+                                <tr>
+                                    <td>913</td>
+                                    <td>Chicago</td>
+                                    <td>02/20/17</td>
+                                </tr>
+                                <tr>
+                                    <td>354</td>
+                                    <td>San Francisco</td>
+                                    <td>02/04/17</td>
+                                </tr>
+                                <tr>
+                                    <td>903</td>
+                                    <td>Paris</td>
+                                    <td>01/15/17</td>
+                                </tr>
+                            </table>
                         </div>
-                        <p style="text-align: center;">Airline: Southwest</p>
-
-                    </div>
-                    <div class="jumbotron col-xs-12" style="padding: 2px;">
-                        <p style="text-align: center;">History</p>
-                        <table class="center" style="text-align: center;">
-                            <tr>
-                                <th>Flight#</th>
-                                <th>Destination</th>
-                                <th>Date</th>
-                            </tr>
-                            <tr>
-                                <td>U213F</td>
-                                <td>Chicago</td>
-                                <td>2.20.17</td>
-                            </tr>
-                            <tr>
-                                <td>Z148G</td>
-                                <td>San Francisco</td>
-                                <td>2.04.17</td>
-                            </tr>
-                            <tr>
-                                <td>D903M</td>
-                                <td>Paris</td>
-                                <td>1-15-17</td>
-                            </tr>
-                        </table>
                     </div>
                     <form action="index.php" method="post">
                         <button type="submit" class="btn btn-success btn-lg btn-block">Back</button>
@@ -120,15 +168,14 @@
                     <div class="container col-xs-12">
                         <div class="row">
                             <div class="panel-heading" style="text-align: center;">
-                                <h1><img class="img-responsive center-block" src="img/logos/AMS_banner_dark.png"</h1>
+                                <h1><img class="img-responsive center-block" src="img/logos/AMS_banner_dark.png"
+                                </h1>
                             </div>
                             <div class="col-xs-12">
-                                <h5 style="text-align: center;">  Contact : 3303303330</h5>
-                                <h5 style="text-align: center;">  Address : 100 E lane Nowhere</h5>
-                                <h5 style="text-align: center;" >  Copyright Guerrilla Sky Systems 2017</h5>
-
+                                <h5 style="text-align: center;"> Contact: 330-330-3330</h5>
+                                <h5 style="text-align: center;"> Address: 100 E Lane Nowhere</h5>
+                                <h5 style="text-align: center;"> Copyright Guerrilla Sky Systems 2017&#153</h5>
                             </div>
-
                         </div>
                     </div>
                 </div>
