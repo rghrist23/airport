@@ -1,7 +1,3 @@
-<?php include 'head.html' ?>
-<?php include 'sidebar_navbar.html' ?>
-
-
 <?php
 $airline = true;
 $business = false;
@@ -68,6 +64,10 @@ else if (!(empty($_POST['employee']))){
 
 }
 ?>
+<?php include 'head.html' ?>
+<?php include 'sidebar_navbar.html' ?>
+
+
 <link rel="stylesheet" href="css/crudCSS.css">
 
 <body>
