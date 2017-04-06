@@ -16,10 +16,13 @@ def getAirline(company):
     return json.dumps(db.getairlineFlights(company))
 
 
-@route('/user_login')
-def getUser():
-    return 0
+@route('/user_login/<email>/<password>')
+def getUser(email, password):
+    return json.dumps(db.checkCustomer(email, password))
 
+@route('/ticket_info/<email>/<password>')
+def getTicketInfo(email, password):
+    return json.dumps(db.checkTicket(email, password))
 
 @route('/flight_number/<flight>')
 def getFlight(flight):
@@ -37,6 +40,23 @@ def viewBiz():
 @route('/viewEmp')
 def viewEmp():
     return json.dumps(db.getEmp())
+
+@route('/viewFlightTime')
+def viewflightTime():
+    return json.dumps(db.getFlightTime())
+
+@route('/viewEmpJobs')
+def viewEmpjobs():
+    return json.dumps(db.getEmpJobs())
+
+@route('/insertEmp/<empid>/<empname>/<empphone>/<empsal>/<empjob>')
+def insertEmp(empid, empname, empphone, empsal, empjob):
+    db.insertEmp(empid,empname,empphone,empsal,empjob)
+
+
+##@route('/test/<flightnumber>/<passenger>')
+##def getData(flightnumber, passenger):
+##    return json.dumps(db.getDataTest(flightnumber, passenger))
 
 
 
