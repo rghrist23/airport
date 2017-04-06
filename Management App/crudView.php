@@ -51,11 +51,11 @@ else if (!(empty($_POST['employee']))){
 
 
 <body>
-<div class="container-fluid">
+<div class="container-fluid col-xs-8">
     <div class="row" style="text-align: center">
         <h2>Data Viewer</h2>
     </div>
-    <div class="col-xs-6">
+    <div class="col-xs-8">
         <div class="dropdown">
                     <button class="btn btn-block btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Airlines
                         <span class="caret"></span></button>

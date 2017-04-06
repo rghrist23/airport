@@ -5,7 +5,7 @@
 
 
 
-<div class="container">
+<div class="container col-xs-8">
     <div class="row" align = "center">
         <h1>Data Manager</h1>
         <br>
