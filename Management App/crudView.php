@@ -1,5 +1,3 @@
-<?php include 'head.html' ?>
-<?php include 'sidebar_navbar.html' ?>
 <?php
     $ch = curl_init();
     curl_setopt($ch,CURLOPT_URL, "http://rghrist23.pythonanywhere.com/viewFlights");
@@ -47,7 +45,8 @@ else if (!(empty($_POST['employee']))){
 }
 ?>
 <!--<link rel="stylesheet" href="css/crudCSS.css">-->
-
+<?php include 'head.html' ?>
+<?php include 'sidebar_navbar.html' ?>
 
 
 <body>
