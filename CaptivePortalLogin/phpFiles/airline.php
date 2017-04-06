@@ -108,8 +108,8 @@ $airportName = "Guerrilla Airport";
 
                                 <li><input class="btn btn-link" name="company" type="submit"
                                            value="American Airlines"></a></li>
-                                <li><input class="btn btn-link" name="company" type="submit" value="Delta Airlines"></a>
-                                </li>
+                                <li><input class="btn btn-link" name="company" type="submit"
+                                           value="Delta Airlines"></a></li>
                                 <li><input class="btn btn-link" name="company" type="submit"
                                            value="United Airlines"></a></li>
 
@@ -117,8 +117,8 @@ $airportName = "Guerrilla Airport";
                                            value="Southwest Airlines"></a></li>
                                 <li><input class="btn btn-link" name="company" type="submit"
                                            value="JetBlue Airways"></a></li>
-                                <li><input class="btn btn-link" name="company" type="submit" value="Air Canada"></a>
-                                </li>
+                                <li><input class="btn btn-link" name="company" type="submit"
+                                           value="Air Canada"></a></li>
 
                                 <li><input class="btn btn-link" name="company" type="submit"
                                            value="Alaska Airlines"></a></li>
@@ -127,12 +127,12 @@ $airportName = "Guerrilla Airport";
                                 <li><input class="btn btn-link" name="company" type="submit"
                                            value="Frontier Airlines"></a></li>
 
-                                <li><input class="btn btn-link" name="company" type="submit" value="Virgin America"></a>
-                                </li>
+                                <li><input class="btn btn-link" name="company" type="submit"
+                                           value="Virgin America"></a></li>
                                 <li><input class="btn btn-link" name="company" type="submit"
                                            value="Hawaiian Airlines"></a></li>
-                                <li><input class="btn btn-link" name="company" type="submit" value="Allegiant Air"></a>
-                                </li>
+                                <li><input class="btn btn-link" name="company" type="submit"
+                                           value="Allegiant Air"></a></li>
 
                             </form>
                         </ul>

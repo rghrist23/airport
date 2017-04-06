@@ -81,8 +81,8 @@ $airportName = "Guerrilla Airport";
                                                value="Southwest Airlines"></a></li>
                                     <li><input class="btn btn-link" name="company" type="submit"
                                                value="JetBlue Airways"></a></li>
-                                    <li><input class="btn btn-link" name="company" type="submit" value="Air Canada"></a>
-                                    </li>
+                                    <li><input class="btn btn-link" name="company" type="submit"
+                                               value="Air Canada"></a></li>
 
                                     <li><input class="btn btn-link" name="company" type="submit"
                                                value="Alaska Airlines"></a></li>
