@@ -69,3 +69,11 @@ fieldset[disabled] .btn-link:focus {
     color: #777;
     text-decoration: none;
 }
+
+.btn-block, .dropdown-menu{
+    width: 100px;
+}
+
+td{
+    font-size: 17px;
+}

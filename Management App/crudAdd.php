@@ -73,23 +73,29 @@ if (!empty($_POST['airlineName']) && !empty($_POST['planeNumber'])) {
 <body>
 
 <div id="container-fluid col-xs-8">
-    <div class="row" style="text-align: center">
-        <h2>Data Creator</h2>
+    <div class="row" style="text-align: left">
+        <h2>  &nbsp; Data Creator <br></h2>
     </div>
-    <div class="col-xs-8">
+    <table class="superbigtable" align="left" border="1">
+        <tr>
+            <td class="kolom1" style="vertical-align: text-top;">
+                 <div class="col-xs-8">
         <div class="dropdown">
-            <button class="btn btn-block btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Airlines
+            <button class="btn btn-block btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="img/blue-question-mark-icon-1.png" width="30">
                 <span class="caret"></span></button>
             <ul class="dropdown-menu col-xs-12" style="text-align: center">
                 <form action="crudAdd.php" method="post">
-                    <li><input class="btn btn-" name="airline" type="submit" value="Airline"></a></li>
+                    <li><input class="btn btn-link" name="airline" type="submit" value="Airline"></a></li>
                     <li><input class="btn btn-link" name="business" type="submit" value="Business"></a></li>
                     <li><input class="btn btn-link" name="employee" type="submit" value="Employee"></a></li>
                 </form>
             </ul>
         </div>
     </div>
-    <form action="crudAdd.php" method="post">
+            </td>
+
+            <td class="kolom2">
+                 <form action="crudAdd.php" method="post">
         <?php if ($airline) : ?>
 
             <table>
@@ -169,6 +175,11 @@ if (!empty($_POST['airlineName']) && !empty($_POST['planeNumber'])) {
             </table>
         <?php endif; ?>
     </form>
+            </td>
+        </tr>
+    </table>
+   
+   
 </div>
 </div>
 </body>
