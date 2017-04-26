@@ -46,6 +46,11 @@ $airportName = "Guerrilla Airport";
                     <a href="index.php"><img src="img/logos/AMS_icon_light.png" width="150" height="200"
                                              style="padding: 10px"></a>
                     <h4 class="panel-title" style="text-align: center; font-size: 30px;"><?php echo $airportName ?></h4>
+                    <a href="map.html">
+                        <h1 style="text-align: center; color: #0f0f0f">
+                            Click for a map of the Airport
+                        </h1>
+                    </a>
                 </div>
                 <div class="panel-body">
                     <div class="jumbotron jumbotron-fluid" style="padding:0;">
@@ -103,8 +108,9 @@ $airportName = "Guerrilla Airport";
                     </form>
                     <div class="container col-xs-12">
                         <div class="row">
-                            <div class="panel-heading" style="text-align: center;">
-                                <h1><img class="img-responsive center-block" src="img/logos/AMS_banner_dark.png"</h1>
+                            <div class="panel-heading"
+                                 style="text-align: center; background-color: transparent; color: #000000;">
+                                <a href="about.html"><img src="img/logos/AMS_banner_dark.png"></a>
                             </div>
                             <div class="col-xs-12">
                                 <h5 style="text-align: center;"> Contact: 330-330-3330</h5>
