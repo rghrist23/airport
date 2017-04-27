@@ -73,6 +73,11 @@ $airportName = "Guerrilla Airport";
                     <a href="index.php"><img src="img/logos/AMS_icon_light.png" width="150" height="200"
                                              style="padding: 10px"></a>
                     <h4 class="panel-title" style="text-align: center; font-size: 30px;"><?php echo $airportName ?></h4>
+                    <a href="map.html">
+                        <h1 style="text-align: center; color: #0f0f0f">
+                            Click for a map of the Airport
+                        </h1>
+                    </a>
                 </div>
                 <div class="panel-body">
                     <div class="jumbotron col-xs-12" style="padding: 2px;">
@@ -108,8 +113,8 @@ $airportName = "Guerrilla Airport";
 
                                 <li><input class="btn btn-link" name="company" type="submit"
                                            value="American Airlines"></a></li>
-                                <li><input class="btn btn-link" name="company" type="submit" value="Delta Airlines"></a>
-                                </li>
+                                <li><input class="btn btn-link" name="company" type="submit"
+                                           value="Delta Airlines"></a></li>
                                 <li><input class="btn btn-link" name="company" type="submit"
                                            value="United Airlines"></a></li>
 
@@ -117,8 +122,8 @@ $airportName = "Guerrilla Airport";
                                            value="Southwest Airlines"></a></li>
                                 <li><input class="btn btn-link" name="company" type="submit"
                                            value="JetBlue Airways"></a></li>
-                                <li><input class="btn btn-link" name="company" type="submit" value="Air Canada"></a>
-                                </li>
+                                <li><input class="btn btn-link" name="company" type="submit"
+                                           value="Air Canada"></a></li>
 
                                 <li><input class="btn btn-link" name="company" type="submit"
                                            value="Alaska Airlines"></a></li>
@@ -127,12 +132,12 @@ $airportName = "Guerrilla Airport";
                                 <li><input class="btn btn-link" name="company" type="submit"
                                            value="Frontier Airlines"></a></li>
 
-                                <li><input class="btn btn-link" name="company" type="submit" value="Virgin America"></a>
-                                </li>
+                                <li><input class="btn btn-link" name="company" type="submit"
+                                           value="Virgin America"></a></li>
                                 <li><input class="btn btn-link" name="company" type="submit"
                                            value="Hawaiian Airlines"></a></li>
-                                <li><input class="btn btn-link" name="company" type="submit" value="Allegiant Air"></a>
-                                </li>
+                                <li><input class="btn btn-link" name="company" type="submit"
+                                           value="Allegiant Air"></a></li>
 
                             </form>
                         </ul>
@@ -145,12 +150,13 @@ $airportName = "Guerrilla Airport";
 
                     <div class="container col-xs-12">
                         <div class="row">
-                            <div class="panel-heading" style="text-align: center;">
-                                <h1><img class="img-responsive center-block" src="img/logos/AMS_banner_dark.png"</h1>
+                            <div class="panel-heading"
+                                 style="text-align: center; background-color: transparent; color: #000000;">
+                                <a href="about.html"><img src="img/logos/AMS_banner_dark.png"></a>
                             </div>
                             <div class="col-xs-12">
-                                <h5 style="text-align: center;"> Contact : 330-330-3330</h5>
-                                <h5 style="text-align: center;"> Address : 100 E lane Nowhere</h5>
+                                <h5 style="text-align: center;"> Contact: 330-330-3330</h5>
+                                <h5 style="text-align: center;"> Address: 100 E lane Nowhere</h5>
                                 <h5 style="text-align: center;"> Copyright Guerrilla Sky Systems 2017&#153</h5>
                             </div>
                         </div>
@@ -160,7 +166,6 @@ $airportName = "Guerrilla Airport";
         </div>
     </div>
 </div>
-
 
 </body>
 </html>
