@@ -85,11 +85,13 @@ curl_close($ch);
 <script src="js/RGraph/libraries/RGraph.svg.pie.js"></script>
 <!-- dashboard welcome page -->
 <body>
+
 <div style="padding: 15px">
-    <div style="width: auto; height: 300px" id="chart-container"></div>
+    <h2>Dashboard</h2>
+    <div style="width: 800px; height: 300px" id="chart-container"></div>
+    <div style="width: 350px; height: 350px" id="pie-container"></div>
 </div>
 <div class="row">
-<div style="width: 350px; height: 350px" id="pie-container"></div>
 </div>
 </body>
 

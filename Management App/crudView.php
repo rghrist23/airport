@@ -47,7 +47,7 @@ if (!(empty($_POST['business']))) {
 <?php include 'head.html' ?>
 <?php include 'sidebar_navbar.html' ?>
 
-
+<link rel="stylesheet" href="css/crudCSS.css">
 <body>
 <div class="container-fluid col-xs-8">
     <div class="row" style="text-align: center">
@@ -55,11 +55,11 @@ if (!(empty($_POST['business']))) {
     </div>
     <div class="col-xs-8">
         <div class="dropdown">
-            <button class="btn btn-block btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Airlines
+            <button class="btn btn-block btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="img/blue-question-mark-icon-1.png" width="40">
                 <span class="caret"></span></button>
             <ul class="dropdown-menu col-xs-12" style="text-align: center">
                 <form action="crudView.php" method="post">
-                    <li><input class="btn btn-" name="airline" type="submit" value="Airline"></a></li>
+                    <li><input class="btn btn-link" name="airline" type="submit" value="Airlines"></a></li>
                     <li><input class="btn btn-link" name="business" type="submit" value="Business"></a></li>
                     <li><input class="btn btn-link" name="employee" type="submit" value="Employee"></a></li>
                 </form>
